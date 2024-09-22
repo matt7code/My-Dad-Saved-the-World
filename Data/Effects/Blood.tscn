@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=2]
+
+[sub_resource type="StandardMaterial3D" id=1]
+flags_unshaded = true
+flags_do_not_receive_shadows = true
+vertex_color_use_as_albedo = true
+params_billboard_mode = 3
+params_billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id=2]
+material = SubResource( 1 )
+size = Vector2( 0.1, 0.1 )
+
+[sub_resource type="Curve" id=3]
+min_value = -10.0
+max_value = 10.0
+_data = [ Vector2( 0, 10 ), 0.0, -96.7273, 0, 0, Vector2( 0.997494, 0.045454 ), 21.9546, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=4]
+max_value = 2.0
+_data = [ Vector2( 0, 1.99545 ), 0.0, -1.43636, 0, 1, Vector2( 1, 0.559091 ), 4.27832, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=5]
+colors = PackedColorArray( 1, 0, 0, 1, 0.2, 0, 0, 1 )
+
+[node name="Blood" type="CPUParticles3D"]
+emitting = false
+amount = 16
+one_shot = true
+explosiveness = 0.8
+lifetime_randomness = 0.1
+local_coords = false
+mesh = SubResource( 2 )
+emission_shape = 1
+emission_sphere_radius = 0.1
+direction = Vector3( 0, 1, 0 )
+initial_velocity = 4.0
+initial_velocity_random = 0.1
+linear_accel = 1.0
+linear_accel_random = 0.1
+linear_accel_curve = SubResource( 3 )
+scale_amount = 2.0
+scale_amount_random = 1.0
+scale_amount_curve = SubResource( 4 )
+color_ramp = SubResource( 5 )

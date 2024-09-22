@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Audio/Ambient-Forest-Day.ogg" type="AudioStream" id=1]
+
+[sub_resource type="Sky" id=1]
+sky_top_color = Color( 0.443137, 1, 0.988235, 1 )
+sky_horizon_color = Color( 1, 0.964706, 0.419608, 1 )
+sky_curve = 0.136414
+sky_energy = 0.25
+sun_latitude = 68.06
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+ambient_light_color = Color( 0.145098, 0.117647, 0.580392, 1 )
+
+[node name="Forest_Day" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -0.371271, 0.928525, 0, -0.928525, -0.371271, 0, 10, 0 )
+shadow_enabled = true
+
+[node name="AmbientSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )

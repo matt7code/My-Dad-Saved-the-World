@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Enemies/Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Models/Skins/skin_orc.png" type="Texture2D" id=2]
+
+[sub_resource type="StandardMaterial3D" id=1]
+albedo_texture = ExtResource( 2 )
+
+[node name="Orc" type="Node3D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Enemy" parent="." instance=ExtResource( 1 )]
+
+[node name="Head" parent="Enemy/Body" index="3"]
+transform = Transform3D( 0.995268, 0, 0.0971744, 0, 1, 0, -0.0971744, 0, 0.995268, 0, 1.595, 0 )
+material/0 = SubResource( 1 )
+
+[node name="Torso" parent="Enemy/Body" index="4"]
+transform = Transform3D( 1.03718, 0, 0, 0, 1.03718, 0, 0, 0, 1.11153, 0, 1.03, 0 )
+material/0 = SubResource( 1 )
+
+[node name="ArmRight" parent="Enemy/Body" index="5"]
+transform = Transform3D( 1, 0, 0, 0, 0.999019, -0.0442962, 0, 0.0442962, 0.999019, 0.225, 1.23, 0 )
+material/0 = SubResource( 1 )
+
+[node name="ArmLeft" parent="Enemy/Body" index="6"]
+transform = Transform3D( 1, 0, 0, 0, 0.999019, 0.0442962, 0, -0.0442962, 0.999019, -0.225, 1.23, 0 )
+material/0 = SubResource( 1 )
+
+[node name="LegLeft" parent="Enemy/Body" index="7"]
+material/0 = SubResource( 1 )
+
+[node name="LegRight" parent="Enemy/Body" index="8"]
+material/0 = SubResource( 1 )
+
+[editable path="Enemy"]
+[editable path="Enemy/Body"]

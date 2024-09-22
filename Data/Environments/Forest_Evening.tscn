@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Audio/Ambient-Forest-Day.ogg" type="AudioStream" id=1]
+[ext_resource path="res://HDRI/satara_night_no_lamps_2k.hdr" type="Texture2D" id=2]
+
+[sub_resource type="Sky" id=3]
+panorama = ExtResource( 2 )
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 3 )
+ambient_light_color = Color( 0.145098, 0.117647, 0.580392, 1 )
+ambient_light_energy = 0.5
+ambient_light_sky_contribution = 0.0
+
+[node name="Forest_Evening" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D( 0.0347582, -0.998574, 0.0405149, -0.987092, -0.0279605, 0.157693, -0.156335, -0.0454731, -0.986657, 0, 10, 0 )
+light_color = Color( 0.231373, 0.270588, 0.533333, 1 )
+light_energy = 0.2
+shadow_enabled = true
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="AmbientSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true

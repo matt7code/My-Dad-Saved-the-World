@@ -1,0 +1,1115 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://Models/TextureUV.material" type="Material" id=1]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Die"
+tracks/0/type = "value"
+tracks/0/path = NodePath("LegLeft:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 33.591, 0, 0 ), Vector3( 44.9709, 53.4107, 44.0613 ), Vector3( 55.0717, 97.193, 99.2208 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LegLeft:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -0.105, 0.675, 0 ), Vector3( -0.105, 0.675, 0.187158 ), Vector3( 0.00494158, 0.404783, 0.63807 ), Vector3( 0.00494158, 0.110279, 1.15906 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("LegRight:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.105, 0.675, 0 ), Vector3( 0.105, 0.675, 0.187158 ), Vector3( 0.177765, 0.508102, 0.578427 ), Vector3( 0.177765, 0.150413, 1.17116 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LegRight:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, -16.218, 0 ), Vector3( 28.4109, 15.6555, 25.1634 ), Vector3( 65.8807, -87.9545, -88.0065 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ArmLeft:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0, 0.2, 0.3, 0.301, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.26, 0.105067 ), Vector3( -0.225, 1.26, 0.157601 ), Vector3( -0.225, 1.26, 0.344759 ), Vector3( -0.206968, 0.773772, 1.08574 ), Vector3( -0.206968, 0.179819, 1.738 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("ArmLeft:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PackedFloat32Array( 0, 0.2, 0.3, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, -43.961 ), Vector3( 0, 0, -31.248 ), Vector3( 17.9062, 29.561, -0.114362 ), Vector3( 61.8021, 96.5301, 87.3938 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ArmRight:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PackedFloat32Array( 0, 0.2, 0.3, 0.301, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.26, 0.174619 ), Vector3( 0.225, 1.26, 0.261929 ), Vector3( 0.225, 1.26, 0.449087 ), Vector3( 0.212345, 0.963092, 1.04428 ), Vector3( 0.212345, 0.122595, 1.81519 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ArmRight:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PackedFloat32Array( 0, 0.2, 0.3, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 40.054, -7.06493e-07, 18.4633 ), Vector3( 0, 0, 27.695 ), Vector3( 0, 0, 27.695 ), Vector3( 88.1761, 1.1204e-05, 27.695 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Torso:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.301, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.03, 0 ), Vector3( 0, 1.03, 0.170594 ), Vector3( 0, 1.03, 0.357752 ), Vector3( 0.0578758, 0.69314, 0.921267 ), Vector3( 0.0578758, 0.0998027, 1.55745 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("Torso:rotation_degrees")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 17.118, 0, 0 ), Vector3( 32.2477, 39.9273, 35.5718 ), Vector3( 72.1871, 45.7102, 50.4986 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("Head:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PackedFloat32Array( 0, 0.2, 0.3, 0.301, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.595, 0 ), Vector3( 0, 1.595, 0.172149 ), Vector3( 0, 1.595, 0.258224 ), Vector3( 0, 1.595, 0.445382 ), Vector3( -0.0817274, 1.12639, 1.26726 ), Vector3( -0.0817274, 0.248612, 2.09156 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("Head:rotation_degrees")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PackedFloat32Array( 0, 0.2, 0.3, 0.6, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 14.1671, -19.6067, 2.1451 ), Vector3( 21.2507, 21.9425, 3.21764 ), Vector3( 22.9337, 61.3756, 41.5535 ), Vector3( 3.2043, 90.1043, 96.1764 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath("../CollisionShape3D:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.9, 0 ), Vector3( 0, 0.5, 1.4 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("../CollisionShape3D:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PackedFloat32Array( 0, 1 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 90, 0, 0 ), Vector3( -180, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "RotAway"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 3 ),
+"transitions": PackedFloat32Array( 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, -1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Head:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Torso:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("ArmRight:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmLeft:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("LegLeft:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("LegRight:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ArmRight:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0.225, 1.26, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("Torso:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.03, 0 ) ]
+}
+tracks/8/type = "value"
+tracks/8/path = NodePath("Head:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.595, 0 ) ]
+}
+tracks/9/type = "value"
+tracks/9/path = NodePath("ArmLeft:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( -0.225, 1.26, 0 ) ]
+}
+tracks/10/type = "value"
+tracks/10/path = NodePath("LegLeft:position")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( -0.105, 0.675, 0 ) ]
+}
+tracks/11/type = "value"
+tracks/11/path = NodePath("LegRight:position")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0.105, 0.675, 0 ) ]
+}
+tracks/12/type = "value"
+tracks/12/path = NodePath(".:position")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+tracks/13/type = "value"
+tracks/13/path = NodePath("../CollisionShape3D:rotation_degrees")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 90, 0, 0 ) ]
+}
+tracks/14/type = "value"
+tracks/14/path = NodePath("../CollisionShape3D:position")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0.9, 0 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+length = 6.0
+loop = true
+step = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmLeft:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 2.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 5, 0, 0 ), Vector3( -5, 0, 0 ), Vector3( 5, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ArmRight:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 2.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -5, 0, 0 ), Vector3( 5, 0, 0 ), Vector3( -5, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Head:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 1.5, 3 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, -5, 0 ), Vector3( 0, 7.5, 0 ), Vector3( 0, 8.53774e-07, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("LegLeft:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 3, 4, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 5, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Torso:scale")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0, 1.5, 3, 4.5, 6 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 1, 1, 1 ), Vector3( 1.05, 1.05, 1.15 ), Vector3( 1, 1, 1 ), Vector3( 1.05, 1.05, 1.15 ), Vector3( 1, 1, 1 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("LegRight:rotation_degrees")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+length = 1.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("LegLeft:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 50, 0, 0 ), Vector3( 55, 0, 0 ), Vector3( 50, 0, 0 ), Vector3( 55, 0, 0 ), Vector3( 50, 0, 0 ), Vector3( 55, 0, 0 ), Vector3( 50, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LegRight:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -65, 0, 0 ), Vector3( -70, 0, 0 ), Vector3( -65, 0, 0 ), Vector3( -70, 0, 0 ), Vector3( -65, 0, 0 ), Vector3( -70, 0, 0 ), Vector3( -65, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Head:rotation_degrees")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.9, 1.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -5, 8.57035e-07, -7.46955e-08 ), Vector3( -15, 8.83892e-07, -2.28768e-07 ), Vector3( -5, 8.57035e-07, -7.46955e-08 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmRight:rotation_degrees")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 25, 60 ), Vector3( -1.53597e-06, -10, 60 ), Vector3( 0, 25, 60 ), Vector3( -1.53597e-06, -10, 60 ), Vector3( 0, 25, 60 ), Vector3( -1.53597e-06, -10, 60 ), Vector3( 0, 25, 60 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ArmLeft:rotation_degrees")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.6, 0.9, 1.2, 1.5, 1.8 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 6.19412e-07, 20, -110 ), Vector3( 1.02055e-06, -20, -110 ), Vector3( 6.19412e-07, 20, -110 ), Vector3( 1.02055e-06, -20, -110 ), Vector3( 6.19412e-07, 20, -110 ), Vector3( 1.02055e-06, -20, -110 ), Vector3( 6.19412e-07, 20, -110 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "using"
+length = 1.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmRight:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.2, 0.3, 0.5, 0.6, 0.7, 0.9, 1.1, 1.3, 1.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 95, 0, 0 ), Vector3( 85, 0, 0 ), Vector3( 95, 0, 0 ), Vector3( 85, 0, 0 ), Vector3( 95, 0, 0 ), Vector3( 85, 0, 0 ), Vector3( 95, 0, 0 ), Vector3( 85, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("LegLeft:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LegRight:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Head:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmLeft:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ArmRight:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Torso:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ArmRight:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ArmLeft:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "walking_holding"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("LegLeft:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LegRight:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Head:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmLeft:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ArmRight:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Torso:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ArmRight:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ArmLeft:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1.2, 2.3, 3.2, 4.1, 4.7, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 3,
+"values": [ Vector3( 85, 0, 0 ), Vector3( 90, 2, 0 ), Vector3( 90, 2, 0 ), Vector3( 95, 0, 0 ), Vector3( 95, 0, 0 ), Vector3( 90, -2, 0 ), Vector3( 90, -2, 0 ), Vector3( 85, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "walking_holding_wielding"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("LegLeft:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LegRight:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Head:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmLeft:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ArmRight:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Torso:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ArmLeft:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1.2, 2.3, 3.2, 4.1, 4.7, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 3,
+"values": [ Vector3( 85, 0, 0 ), Vector3( 90, 2, 0 ), Vector3( 90, 2, 0 ), Vector3( 95, 0, 0 ), Vector3( 95, 0, 0 ), Vector3( 90, -2, 0 ), Vector3( 90, -2, 0 ), Vector3( 85, 0, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ArmRight:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 34.3928, 21.9326, 12.1479 ), Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 58.759, -11.8434, -5.50558 ), Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 34.3928, 21.9326, 12.1479 ), Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 29.6504, 40.0788, 21.8361 ), Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 34.3928, 21.9326, 12.1479 ), Vector3( 34.3927, 6.93255, 12.1479 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "walking_wielding"
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("LegLeft:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("LegRight:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Head:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ), Vector3( 0, 1.595, 0 ), Vector3( 0, 1.57482, 0 ) ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("ArmLeft:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ), Vector3( -0.225, 1.26, 0 ), Vector3( -0.225, 1.23, 0 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("ArmRight:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ), Vector3( 0.225, 1.26, 0 ), Vector3( 0.225, 1.23, 0 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Torso:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ), Vector3( 0, 1.03, 0 ), Vector3( 0, 1.01238, 0 ) ]
+}
+tracks/6/type = "value"
+tracks/6/path = NodePath("ArmLeft:rotation_degrees")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ), Vector3( 15, 0, 0 ), Vector3( -15, 0, 0 ) ]
+}
+tracks/7/type = "value"
+tracks/7/path = NodePath("ArmRight:rotation_degrees")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = {
+"times": PackedFloat32Array( 0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 34.3928, 21.9326, 12.1479 ), Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 58.759, -11.8434, -5.50558 ), Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 34.3928, 21.9326, 12.1479 ), Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 29.6504, 40.0788, 21.8361 ), Vector3( 34.3927, 6.93255, 12.1479 ), Vector3( 34.3928, 21.9326, 12.1479 ), Vector3( 34.3927, 6.93255, 12.1479 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "winding_up"
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmRight:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 165, 0, 0 ), Vector3( 175, 0, 0 ), Vector3( 165, 0, 0 ), Vector3( 175, 0, 0 ), Vector3( 165, 0, 0 ), Vector3( 175, 0, 0 ) ]
+}
+
+[sub_resource type="ArrayMesh" id=12]
+surfaces/0 = {
+"aabb": AABB( -0.224974, -0.224974, -0.224974, 0.449958, 0.449948, 0.449948 ),
+"array_data": PackedByteArray( 139, 95, 102, 62, 144, 95, 102, 190, 143, 95, 102, 190, 0, 0, 129, 0, 129, 0, 0, 127, 219, 50, 167, 52, 139, 95, 102, 62, 144, 95, 102, 190, 143, 95, 102, 190, 0, 129, 0, 0, 129, 0, 0, 127, 219, 50, 167, 52, 139, 95, 102, 62, 144, 95, 102, 190, 143, 95, 102, 190, 127, 0, 0, 0, 0, 0, 129, 127, 219, 50, 167, 52, 143, 95, 102, 190, 144, 95, 102, 190, 139, 95, 102, 190, 129, 0, 0, 0, 0, 0, 127, 127, 176, 53, 167, 52, 143, 95, 102, 190, 144, 95, 102, 190, 139, 95, 102, 190, 0, 0, 129, 0, 129, 0, 0, 127, 176, 53, 167, 52, 143, 95, 102, 190, 144, 95, 102, 190, 139, 95, 102, 190, 0, 129, 0, 0, 129, 0, 0, 127, 176, 53, 167, 52, 143, 95, 102, 190, 144, 95, 102, 62, 139, 95, 102, 190, 129, 0, 0, 0, 0, 0, 127, 127, 176, 53, 200, 48, 143, 95, 102, 190, 144, 95, 102, 62, 139, 95, 102, 190, 0, 0, 129, 0, 129, 0, 0, 127, 176, 53, 200, 48, 143, 95, 102, 190, 144, 95, 102, 62, 139, 95, 102, 190, 0, 127, 0, 0, 129, 0, 0, 127, 176, 53, 200, 48, 139, 95, 102, 62, 144, 95, 102, 62, 143, 95, 102, 190, 0, 0, 129, 0, 129, 0, 0, 127, 219, 50, 200, 48, 139, 95, 102, 62, 144, 95, 102, 62, 143, 95, 102, 190, 0, 127, 0, 0, 129, 0, 0, 127, 219, 50, 200, 48, 139, 95, 102, 62, 144, 95, 102, 62, 143, 95, 102, 190, 127, 0, 0, 0, 0, 0, 129, 127, 219, 50, 200, 48, 143, 95, 102, 62, 144, 95, 102, 190, 139, 95, 102, 62, 0, 129, 0, 0, 129, 0, 0, 127, 219, 50, 233, 54, 143, 95, 102, 62, 144, 95, 102, 190, 139, 95, 102, 62, 0, 0, 127, 0, 127, 0, 0, 127, 26, 57, 167, 52, 143, 95, 102, 62, 144, 95, 102, 190, 139, 95, 102, 62, 127, 0, 0, 0, 0, 0, 129, 127, 171, 44, 167, 52, 139, 95, 102, 190, 144, 95, 102, 190, 143, 95, 102, 62, 129, 0, 0, 0, 0, 0, 127, 127, 243, 55, 167, 52, 139, 95, 102, 190, 144, 95, 102, 190, 143, 95, 102, 62, 0, 129, 0, 0, 129, 0, 0, 127, 176, 53, 233, 54, 139, 95, 102, 190, 144, 95, 102, 190, 143, 95, 102, 62, 0, 0, 127, 0, 127, 0, 0, 127, 243, 55, 167, 52, 139, 95, 102, 190, 144, 95, 102, 62, 143, 95, 102, 62, 129, 0, 0, 0, 0, 0, 127, 127, 243, 55, 200, 48, 139, 95, 102, 190, 144, 95, 102, 62, 143, 95, 102, 62, 0, 127, 0, 0, 129, 0, 0, 127, 176, 53, 49, 32, 139, 95, 102, 190, 144, 95, 102, 62, 143, 95, 102, 62, 0, 0, 127, 0, 127, 0, 0, 127, 243, 55, 200, 48, 143, 95, 102, 62, 144, 95, 102, 62, 139, 95, 102, 62, 0, 127, 0, 0, 129, 0, 0, 127, 219, 50, 49, 32, 143, 95, 102, 62, 144, 95, 102, 62, 139, 95, 102, 62, 0, 0, 127, 0, 127, 0, 0, 127, 26, 57, 200, 48, 143, 95, 102, 62, 144, 95, 102, 62, 139, 95, 102, 62, 127, 0, 0, 0, 0, 0, 129, 127, 171, 44, 200, 48 ),
+"array_index_data": PackedByteArray( 22, 0, 17, 0, 20, 0, 22, 0, 13, 0, 17, 0, 0, 0, 7, 0, 4, 0, 0, 0, 9, 0, 7, 0, 10, 0, 19, 0, 8, 0, 10, 0, 21, 0, 19, 0, 12, 0, 5, 0, 16, 0, 12, 0, 1, 0, 5, 0, 3, 0, 18, 0, 15, 0, 3, 0, 6, 0, 18, 0, 14, 0, 11, 0, 2, 0, 14, 0, 23, 0, 11, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 36,
+"material": ExtResource( 1 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ArrayMesh" id=13]
+surfaces/0 = {
+"aabb": AABB( -0.225218, -0.337461, -0.112487, 0.450446, 0.674932, 0.224974 ),
+"array_data": PackedByteArray( 138, 159, 102, 62, 171, 199, 172, 62, 146, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 149, 55, 142, 54, 138, 159, 102, 62, 171, 199, 172, 62, 146, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 149, 55, 142, 54, 138, 159, 102, 62, 171, 199, 172, 62, 146, 95, 230, 189, 126, 0, 0, 0, 0, 0, 130, 127, 149, 55, 142, 54, 221, 31, 102, 190, 171, 199, 172, 62, 136, 95, 230, 189, 130, 0, 0, 0, 0, 0, 126, 127, 237, 56, 142, 54, 221, 31, 102, 190, 171, 199, 172, 62, 136, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 237, 56, 142, 54, 221, 31, 102, 190, 171, 199, 172, 62, 136, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 237, 56, 142, 54, 138, 159, 102, 190, 171, 199, 172, 62, 146, 95, 230, 61, 130, 0, 0, 0, 0, 0, 126, 127, 126, 57, 142, 54, 138, 159, 102, 190, 171, 199, 172, 62, 146, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 237, 56, 108, 53, 138, 159, 102, 190, 171, 199, 172, 62, 146, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 126, 57, 142, 54, 221, 31, 102, 62, 171, 199, 172, 190, 136, 95, 230, 61, 0, 129, 0, 0, 129, 0, 0, 127, 150, 55, 140, 57, 221, 31, 102, 62, 171, 199, 172, 190, 136, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 161, 58, 251, 56, 221, 31, 102, 62, 171, 199, 172, 190, 136, 95, 230, 61, 126, 0, 0, 0, 0, 0, 130, 127, 115, 54, 251, 56, 138, 159, 102, 190, 171, 199, 172, 190, 146, 95, 230, 61, 130, 0, 0, 0, 0, 0, 126, 127, 126, 57, 251, 56, 138, 159, 102, 190, 171, 199, 172, 190, 146, 95, 230, 61, 0, 129, 0, 0, 129, 0, 0, 127, 237, 56, 140, 57, 138, 159, 102, 190, 171, 199, 172, 190, 146, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 126, 57, 251, 56, 221, 31, 102, 190, 171, 199, 172, 190, 136, 95, 230, 189, 130, 0, 0, 0, 0, 0, 126, 127, 237, 56, 251, 56, 221, 31, 102, 190, 171, 199, 172, 190, 136, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 237, 56, 251, 56, 221, 31, 102, 190, 171, 199, 172, 190, 136, 95, 230, 189, 0, 129, 0, 0, 129, 0, 0, 127, 237, 56, 251, 56, 138, 159, 102, 62, 171, 199, 172, 190, 146, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 149, 55, 251, 56, 138, 159, 102, 62, 171, 199, 172, 190, 146, 95, 230, 189, 0, 129, 0, 0, 129, 0, 0, 127, 149, 55, 251, 56, 138, 159, 102, 62, 171, 199, 172, 190, 146, 95, 230, 189, 126, 0, 0, 0, 0, 0, 130, 127, 149, 55, 251, 56, 221, 31, 102, 62, 171, 199, 172, 62, 136, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 150, 55, 108, 53, 221, 31, 102, 62, 171, 199, 172, 62, 136, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 161, 58, 142, 54, 221, 31, 102, 62, 171, 199, 172, 62, 136, 95, 230, 61, 126, 0, 0, 0, 0, 0, 130, 127, 115, 54, 142, 54 ),
+"array_index_data": PackedByteArray( 18, 0, 4, 0, 16, 0, 18, 0, 0, 0, 4, 0, 11, 0, 2, 0, 20, 0, 11, 0, 23, 0, 2, 0, 9, 0, 17, 0, 13, 0, 9, 0, 19, 0, 17, 0, 7, 0, 1, 0, 21, 0, 7, 0, 5, 0, 1, 0, 22, 0, 14, 0, 8, 0, 22, 0, 10, 0, 14, 0, 15, 0, 6, 0, 12, 0, 15, 0, 3, 0, 6, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 36,
+"material": ExtResource( 1 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 24
+}
+
+[sub_resource type="ArrayMesh" id=14]
+surfaces/0 = {
+"aabb": AABB( -2.61366e-05, -0.667566, -0.112487, 0.224984, 0.787409, 0.224974 ),
+"array_data": PackedByteArray( 178, 88, 102, 62, 64, 215, 94, 190, 150, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 11, 47, 110, 56, 178, 88, 102, 62, 64, 215, 94, 190, 150, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 11, 47, 110, 56, 178, 88, 102, 62, 64, 215, 94, 190, 150, 95, 230, 189, 120, 40, 0, 0, 0, 0, 129, 127, 11, 47, 110, 56, 178, 88, 102, 62, 64, 215, 94, 190, 150, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 11, 47, 110, 56, 0, 64, 219, 183, 64, 215, 94, 190, 146, 95, 230, 189, 129, 0, 0, 0, 0, 0, 126, 127, 215, 49, 110, 56, 0, 64, 219, 183, 64, 215, 94, 190, 146, 95, 230, 189, 129, 0, 0, 0, 0, 0, 126, 127, 215, 49, 110, 56, 0, 64, 219, 183, 64, 215, 94, 190, 146, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 215, 49, 110, 56, 0, 64, 219, 183, 64, 215, 94, 190, 146, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 215, 49, 110, 56, 178, 88, 102, 62, 100, 155, 226, 190, 150, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 11, 47, 2, 57, 178, 88, 102, 62, 100, 155, 226, 190, 150, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 11, 47, 2, 57, 178, 88, 102, 62, 100, 155, 226, 190, 150, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 11, 47, 2, 57, 178, 88, 102, 62, 100, 155, 226, 190, 150, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 11, 47, 2, 57, 0, 64, 219, 183, 100, 155, 226, 190, 146, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 215, 49, 2, 57, 0, 64, 219, 183, 100, 155, 226, 190, 146, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 215, 49, 2, 57, 0, 64, 219, 183, 100, 155, 226, 190, 146, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 215, 49, 2, 57, 0, 64, 219, 183, 100, 155, 226, 190, 146, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 215, 49, 2, 57, 20, 142, 25, 62, 164, 25, 14, 191, 149, 95, 230, 189, 129, 0, 0, 0, 0, 0, 129, 127, 11, 47, 18, 58, 20, 142, 25, 62, 164, 25, 14, 191, 149, 95, 230, 189, 136, 40, 0, 0, 0, 0, 129, 127, 11, 47, 18, 58, 20, 142, 25, 62, 164, 25, 14, 191, 149, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 75, 48, 76, 57, 20, 142, 25, 62, 164, 25, 14, 191, 149, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 75, 48, 76, 57, 0, 64, 219, 183, 164, 25, 14, 191, 146, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 215, 49, 76, 57, 0, 64, 219, 183, 164, 25, 14, 191, 146, 95, 230, 189, 0, 129, 0, 0, 0, 0, 127, 127, 215, 49, 76, 57, 0, 64, 219, 183, 164, 25, 14, 191, 146, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 215, 49, 76, 57, 216, 81, 230, 61, 48, 112, 245, 61, 148, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 174, 48, 30, 55, 216, 81, 230, 61, 48, 112, 245, 61, 148, 95, 230, 189, 0, 127, 0, 0, 130, 0, 0, 127, 174, 48, 30, 55, 216, 81, 230, 61, 48, 112, 245, 61, 148, 95, 230, 189, 120, 40, 0, 0, 0, 0, 130, 127, 11, 47, 30, 55, 0, 0, 219, 183, 64, 215, 94, 190, 136, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 20, 52, 110, 56, 0, 0, 219, 183, 64, 215, 94, 190, 136, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 20, 52, 110, 56, 0, 0, 219, 183, 64, 215, 94, 190, 136, 95, 230, 61, 0, 0, 127, 0, 126, 0, 0, 127, 20, 52, 110, 56, 0, 0, 219, 183, 64, 215, 94, 190, 136, 95, 230, 61, 0, 0, 127, 0, 126, 0, 0, 127, 20, 52, 110, 56, 182, 88, 102, 62, 100, 155, 226, 190, 132, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 61, 53, 2, 57, 182, 88, 102, 62, 100, 155, 226, 190, 132, 95, 230, 61, 0, 0, 127, 0, 126, 0, 0, 127, 61, 53, 2, 57, 182, 88, 102, 62, 100, 155, 226, 190, 132, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 207, 40, 2, 57, 182, 88, 102, 62, 100, 155, 226, 190, 132, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 207, 40, 2, 57, 0, 0, 219, 183, 100, 155, 226, 190, 136, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 20, 52, 2, 57, 0, 0, 219, 183, 100, 155, 226, 190, 136, 95, 230, 61, 0, 129, 0, 0, 0, 0, 129, 127, 207, 40, 191, 58, 0, 0, 219, 183, 100, 155, 226, 190, 136, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 20, 52, 2, 57, 24, 142, 25, 62, 100, 155, 226, 190, 133, 95, 230, 61, 129, 0, 0, 0, 0, 0, 129, 127, 207, 40, 92, 58, 24, 142, 25, 62, 100, 155, 226, 190, 133, 95, 230, 61, 0, 129, 0, 0, 0, 0, 129, 127, 207, 40, 92, 58, 24, 142, 25, 62, 100, 155, 226, 190, 133, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 218, 52, 2, 57, 182, 88, 102, 62, 164, 25, 14, 191, 132, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 61, 53, 76, 57, 182, 88, 102, 62, 164, 25, 14, 191, 132, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 61, 53, 76, 57, 182, 88, 102, 62, 164, 25, 14, 191, 132, 95, 230, 61, 120, 216, 0, 0, 0, 0, 129, 127, 207, 40, 76, 57, 182, 88, 102, 62, 164, 25, 14, 191, 132, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 207, 40, 76, 57, 224, 81, 230, 61, 150, 229, 42, 191, 134, 95, 230, 61, 136, 40, 0, 0, 0, 0, 129, 127, 207, 40, 200, 57, 224, 81, 230, 61, 150, 229, 42, 191, 134, 95, 230, 61, 0, 129, 0, 0, 0, 0, 130, 127, 207, 40, 200, 57, 224, 81, 230, 61, 150, 229, 42, 191, 134, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 169, 52, 150, 57, 0, 0, 219, 183, 48, 112, 245, 61, 136, 95, 230, 61, 129, 0, 0, 0, 0, 0, 126, 127, 20, 52, 30, 55, 0, 0, 219, 183, 48, 112, 245, 61, 136, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 215, 49, 245, 53, 0, 0, 219, 183, 48, 112, 245, 61, 136, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 20, 52, 30, 55, 0, 64, 219, 183, 48, 112, 245, 61, 146, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 215, 49, 30, 55, 0, 64, 219, 183, 48, 112, 245, 61, 146, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 215, 49, 30, 55, 0, 64, 219, 183, 48, 112, 245, 61, 146, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 215, 49, 30, 55, 182, 88, 102, 62, 64, 215, 94, 190, 132, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 61, 53, 110, 56, 182, 88, 102, 62, 64, 215, 94, 190, 132, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 61, 53, 110, 56, 182, 88, 102, 62, 64, 215, 94, 190, 132, 95, 230, 61, 120, 40, 0, 0, 0, 0, 130, 127, 207, 40, 110, 56, 182, 88, 102, 62, 64, 215, 94, 190, 132, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 207, 40, 110, 56, 224, 81, 230, 61, 48, 112, 245, 61, 134, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 174, 48, 245, 53, 224, 81, 230, 61, 48, 112, 245, 61, 134, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 169, 52, 30, 55, 224, 81, 230, 61, 48, 112, 245, 61, 134, 95, 230, 61, 120, 40, 0, 0, 0, 0, 129, 127, 207, 40, 30, 55, 216, 81, 230, 61, 150, 229, 42, 191, 148, 95, 230, 189, 136, 40, 0, 0, 0, 0, 129, 127, 11, 47, 200, 57, 216, 81, 230, 61, 150, 229, 42, 191, 148, 95, 230, 189, 0, 129, 0, 0, 0, 0, 130, 127, 11, 47, 200, 57, 216, 81, 230, 61, 150, 229, 42, 191, 148, 95, 230, 189, 0, 0, 129, 0, 130, 0, 0, 127, 174, 48, 150, 57, 138, 243, 63, 62, 150, 229, 42, 191, 149, 95, 230, 189, 0, 129, 0, 0, 0, 0, 130, 127, 11, 47, 150, 57, 138, 243, 63, 62, 150, 229, 42, 191, 149, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 209, 47, 150, 57, 138, 243, 63, 62, 150, 229, 42, 191, 149, 95, 230, 189, 120, 216, 0, 0, 0, 0, 129, 127, 11, 47, 150, 57, 20, 142, 25, 62, 100, 155, 226, 190, 149, 95, 230, 189, 129, 0, 0, 0, 0, 0, 129, 127, 11, 47, 92, 58, 20, 142, 25, 62, 100, 155, 226, 190, 149, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 75, 48, 2, 57, 20, 142, 25, 62, 100, 155, 226, 190, 149, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 75, 48, 2, 57, 20, 142, 25, 62, 100, 155, 226, 190, 149, 95, 230, 189, 0, 129, 0, 0, 0, 0, 129, 127, 11, 47, 92, 58, 24, 142, 25, 62, 164, 25, 14, 191, 133, 95, 230, 61, 129, 0, 0, 0, 0, 0, 129, 127, 207, 40, 18, 58, 24, 142, 25, 62, 164, 25, 14, 191, 133, 95, 230, 61, 136, 40, 0, 0, 0, 0, 129, 127, 207, 40, 18, 58, 24, 142, 25, 62, 164, 25, 14, 191, 133, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 218, 52, 76, 57, 24, 142, 25, 62, 164, 25, 14, 191, 133, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 218, 52, 76, 57, 178, 88, 102, 62, 164, 25, 14, 191, 150, 95, 230, 189, 0, 0, 129, 0, 130, 0, 0, 127, 11, 47, 76, 57, 178, 88, 102, 62, 164, 25, 14, 191, 150, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 11, 47, 76, 57, 178, 88, 102, 62, 164, 25, 14, 191, 150, 95, 230, 189, 120, 216, 0, 0, 0, 0, 130, 127, 11, 47, 76, 57, 178, 88, 102, 62, 164, 25, 14, 191, 150, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 11, 47, 76, 57, 142, 243, 63, 62, 150, 229, 42, 191, 133, 95, 230, 61, 0, 129, 0, 0, 0, 0, 130, 127, 207, 40, 150, 57, 142, 243, 63, 62, 150, 229, 42, 191, 133, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 11, 53, 150, 57, 142, 243, 63, 62, 150, 229, 42, 191, 133, 95, 230, 61, 120, 216, 0, 0, 0, 0, 130, 127, 207, 40, 150, 57, 144, 135, 153, 61, 100, 155, 226, 190, 135, 95, 230, 61, 0, 129, 0, 0, 0, 0, 129, 127, 207, 40, 142, 58, 0, 32, 219, 183, 100, 155, 226, 190, 136, 230, 17, 179, 129, 0, 0, 0, 0, 0, 127, 127, 0, 51, 2, 57, 0, 32, 219, 183, 100, 155, 226, 190, 136, 230, 17, 179, 129, 0, 0, 0, 0, 0, 127, 127, 0, 51, 2, 57, 0, 32, 219, 183, 100, 155, 226, 190, 136, 230, 17, 179, 0, 129, 0, 0, 0, 0, 129, 127, 185, 44, 191, 58, 0, 32, 219, 183, 100, 155, 226, 190, 136, 230, 17, 179, 0, 0, 127, 0, 129, 0, 0, 127, 198, 51, 200, 57, 136, 135, 153, 61, 100, 155, 226, 190, 147, 95, 230, 189, 0, 0, 130, 0, 127, 0, 0, 127, 17, 49, 2, 57, 136, 135, 153, 61, 100, 155, 226, 190, 147, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 17, 49, 2, 57, 136, 135, 153, 61, 100, 155, 226, 190, 147, 95, 230, 189, 0, 129, 0, 0, 0, 0, 130, 127, 11, 47, 142, 58, 136, 135, 153, 61, 100, 155, 226, 190, 147, 95, 230, 189, 127, 0, 0, 0, 0, 0, 127, 127, 215, 49, 200, 57, 136, 135, 153, 61, 164, 25, 14, 191, 147, 95, 230, 189, 0, 129, 0, 0, 0, 0, 126, 127, 215, 49, 126, 57, 136, 135, 153, 61, 164, 25, 14, 191, 147, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 17, 49, 76, 57, 136, 135, 153, 61, 164, 25, 14, 191, 147, 95, 230, 189, 127, 0, 0, 0, 0, 0, 127, 127, 215, 49, 126, 57, 140, 135, 153, 61, 100, 155, 226, 190, 198, 136, 66, 179, 0, 129, 0, 0, 0, 0, 129, 127, 185, 44, 142, 58, 140, 135, 153, 61, 100, 155, 226, 190, 198, 136, 66, 179, 0, 0, 127, 0, 129, 0, 0, 127, 0, 51, 200, 57, 140, 135, 153, 61, 100, 155, 226, 190, 198, 136, 66, 179, 127, 0, 0, 0, 0, 0, 127, 127, 0, 51, 200, 57, 0, 32, 219, 183, 164, 25, 14, 191, 136, 230, 17, 179, 129, 0, 0, 0, 0, 0, 127, 127, 0, 51, 76, 57, 0, 32, 219, 183, 164, 25, 14, 191, 136, 230, 17, 179, 0, 129, 0, 0, 0, 0, 127, 127, 0, 51, 76, 57, 0, 32, 219, 183, 164, 25, 14, 191, 136, 230, 17, 179, 0, 0, 127, 0, 129, 0, 0, 127, 198, 51, 126, 57, 140, 135, 153, 61, 164, 25, 14, 191, 198, 136, 66, 179, 0, 129, 0, 0, 0, 0, 127, 127, 0, 51, 126, 57, 140, 135, 153, 61, 164, 25, 14, 191, 198, 136, 66, 179, 0, 0, 127, 0, 129, 0, 0, 127, 0, 51, 126, 57, 140, 135, 153, 61, 164, 25, 14, 191, 198, 136, 66, 179, 127, 0, 0, 0, 0, 0, 127, 127, 0, 51, 126, 57 ),
+"array_index_data": PackedByteArray( 29, 0, 58, 0, 54, 0, 29, 0, 49, 0, 58, 0, 64, 0, 18, 0, 62, 0, 64, 0, 74, 0, 18, 0, 46, 0, 41, 0, 79, 0, 46, 0, 73, 0, 41, 0, 91, 0, 15, 0, 22, 0, 91, 0, 87, 0, 15, 0, 6, 0, 8, 0, 0, 0, 67, 0, 14, 0, 86, 0, 6, 0, 67, 0, 8, 0, 67, 0, 6, 0, 14, 0, 48, 0, 24, 0, 57, 0, 48, 0, 52, 0, 24, 0, 72, 0, 30, 0, 40, 0, 72, 0, 39, 0, 30, 0, 98, 0, 94, 0, 100, 0, 98, 0, 85, 0, 94, 0, 47, 0, 4, 0, 50, 0, 47, 0, 26, 0, 4, 0, 25, 0, 55, 0, 59, 0, 25, 0, 2, 0, 55, 0, 88, 0, 38, 0, 69, 0, 38, 0, 93, 0, 81, 0, 38, 0, 88, 0, 93, 0, 60, 0, 71, 0, 44, 0, 60, 0, 17, 0, 71, 0, 3, 0, 32, 0, 56, 0, 3, 0, 10, 0, 32, 0, 61, 0, 78, 0, 63, 0, 61, 0, 45, 0, 78, 0, 99, 0, 21, 0, 97, 0, 99, 0, 90, 0, 21, 0, 43, 0, 11, 0, 77, 0, 43, 0, 33, 0, 11, 0, 20, 0, 82, 0, 96, 0, 20, 0, 12, 0, 82, 0, 23, 0, 7, 0, 1, 0, 23, 0, 51, 0, 7, 0, 75, 0, 68, 0, 19, 0, 75, 0, 9, 0, 68, 0, 35, 0, 93, 0, 84, 0, 35, 0, 81, 0, 93, 0, 101, 0, 89, 0, 92, 0, 101, 0, 95, 0, 89, 0, 34, 0, 5, 0, 27, 0, 5, 0, 83, 0, 13, 0, 5, 0, 34, 0, 83, 0, 16, 0, 37, 0, 70, 0, 16, 0, 66, 0, 37, 0, 80, 0, 76, 0, 65, 0, 80, 0, 42, 0, 76, 0, 28, 0, 31, 0, 36, 0, 28, 0, 53, 0, 31, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 162,
+"material": ExtResource( 1 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 102
+}
+
+[sub_resource type="ArrayMesh" id=15]
+surfaces/0 = {
+"aabb": AABB( -0.224948, -0.667566, -0.112487, 0.224984, 0.787409, 0.224974 ),
+"array_data": PackedByteArray( 0, 96, 218, 55, 64, 215, 94, 190, 136, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 117, 58, 146, 50, 0, 96, 218, 55, 64, 215, 94, 190, 136, 95, 230, 189, 0, 0, 129, 0, 130, 0, 0, 127, 117, 58, 146, 50, 0, 96, 218, 55, 64, 215, 94, 190, 136, 95, 230, 189, 127, 0, 0, 0, 0, 0, 130, 127, 117, 58, 146, 50, 0, 96, 218, 55, 64, 215, 94, 190, 136, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 117, 58, 146, 50, 0, 96, 218, 55, 100, 155, 226, 190, 136, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 117, 58, 114, 52, 0, 96, 218, 55, 100, 155, 226, 190, 136, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 117, 58, 114, 52, 0, 96, 218, 55, 100, 155, 226, 190, 136, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 117, 58, 114, 52, 0, 96, 218, 55, 100, 155, 226, 190, 136, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 117, 58, 114, 52, 0, 96, 218, 55, 164, 25, 14, 191, 136, 95, 230, 189, 0, 129, 0, 0, 0, 0, 129, 127, 117, 58, 6, 53, 0, 96, 218, 55, 164, 25, 14, 191, 136, 95, 230, 189, 0, 0, 129, 0, 130, 0, 0, 127, 117, 58, 6, 53, 0, 96, 218, 55, 164, 25, 14, 191, 136, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 117, 58, 6, 53, 187, 88, 102, 190, 164, 25, 14, 191, 132, 95, 230, 189, 131, 236, 0, 0, 0, 0, 127, 127, 9, 59, 6, 53, 187, 88, 102, 190, 164, 25, 14, 191, 132, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 9, 59, 6, 53, 187, 88, 102, 190, 164, 25, 14, 191, 132, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 9, 59, 6, 53, 234, 81, 230, 189, 150, 229, 42, 191, 134, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 191, 58, 154, 53, 234, 81, 230, 189, 150, 229, 42, 191, 134, 95, 230, 189, 0, 129, 0, 0, 0, 0, 127, 127, 9, 59, 253, 53, 234, 81, 230, 189, 150, 229, 42, 191, 134, 95, 230, 189, 120, 40, 0, 0, 0, 0, 127, 127, 9, 59, 253, 53, 147, 243, 63, 190, 150, 229, 42, 191, 133, 95, 230, 189, 136, 216, 0, 0, 0, 0, 126, 127, 9, 59, 154, 53, 147, 243, 63, 190, 150, 229, 42, 191, 133, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 241, 58, 154, 53, 147, 243, 63, 190, 150, 229, 42, 191, 133, 95, 230, 189, 0, 129, 0, 0, 0, 0, 127, 127, 9, 59, 154, 53, 0, 96, 218, 55, 48, 112, 245, 61, 136, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 117, 58, 47, 46, 0, 96, 218, 55, 48, 112, 245, 61, 136, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 117, 58, 47, 46, 0, 96, 218, 55, 48, 112, 245, 61, 136, 95, 230, 189, 127, 0, 0, 0, 0, 0, 130, 127, 117, 58, 47, 46, 234, 81, 230, 189, 48, 112, 245, 61, 134, 95, 230, 189, 136, 40, 0, 0, 0, 0, 127, 127, 9, 59, 47, 46, 234, 81, 230, 189, 48, 112, 245, 61, 134, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 191, 58, 47, 46, 234, 81, 230, 189, 48, 112, 245, 61, 134, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 191, 58, 47, 46, 226, 81, 230, 189, 48, 112, 245, 61, 148, 95, 230, 61, 136, 40, 0, 0, 0, 0, 126, 127, 158, 59, 47, 46, 226, 81, 230, 189, 48, 112, 245, 61, 148, 95, 230, 61, 0, 127, 0, 0, 130, 0, 0, 127, 191, 58, 47, 38, 226, 81, 230, 189, 48, 112, 245, 61, 148, 95, 230, 61, 0, 0, 126, 0, 127, 0, 0, 127, 150, 57, 47, 46, 0, 160, 218, 55, 48, 112, 245, 61, 146, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 117, 58, 47, 38, 0, 160, 218, 55, 48, 112, 245, 61, 146, 95, 230, 61, 0, 0, 126, 0, 127, 0, 0, 127, 225, 57, 47, 46, 0, 160, 218, 55, 48, 112, 245, 61, 146, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 225, 57, 47, 46, 0, 160, 218, 55, 64, 215, 94, 190, 146, 95, 230, 61, 0, 0, 126, 0, 127, 0, 0, 127, 225, 57, 146, 50, 0, 160, 218, 55, 64, 215, 94, 190, 146, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 225, 57, 146, 50, 0, 160, 218, 55, 64, 215, 94, 190, 146, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 225, 57, 146, 50, 0, 160, 218, 55, 64, 215, 94, 190, 146, 95, 230, 61, 127, 0, 0, 0, 0, 0, 130, 127, 225, 57, 146, 50, 25, 142, 25, 190, 164, 25, 14, 191, 149, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 126, 57, 6, 53, 25, 142, 25, 190, 164, 25, 14, 191, 149, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 126, 57, 6, 53, 25, 142, 25, 190, 164, 25, 14, 191, 149, 95, 230, 61, 125, 20, 0, 0, 0, 0, 127, 127, 158, 59, 146, 54, 183, 88, 102, 190, 64, 215, 94, 190, 150, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 158, 59, 146, 50, 183, 88, 102, 190, 64, 215, 94, 190, 150, 95, 230, 61, 136, 40, 0, 0, 0, 0, 127, 127, 158, 59, 146, 50, 183, 88, 102, 190, 64, 215, 94, 190, 150, 95, 230, 61, 0, 0, 126, 0, 127, 0, 0, 127, 76, 57, 146, 50, 183, 88, 102, 190, 64, 215, 94, 190, 150, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 76, 57, 146, 50, 0, 160, 218, 55, 100, 155, 226, 190, 146, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 225, 57, 114, 52, 0, 160, 218, 55, 100, 155, 226, 190, 146, 95, 230, 61, 0, 129, 0, 0, 0, 0, 127, 127, 158, 59, 236, 55, 0, 160, 218, 55, 100, 155, 226, 190, 146, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 225, 57, 114, 52, 226, 81, 230, 189, 150, 229, 42, 191, 148, 95, 230, 61, 0, 129, 0, 0, 0, 0, 127, 127, 158, 59, 253, 53, 226, 81, 230, 189, 150, 229, 42, 191, 148, 95, 230, 61, 0, 0, 127, 0, 126, 0, 0, 127, 150, 57, 154, 53, 226, 81, 230, 189, 150, 229, 42, 191, 148, 95, 230, 61, 120, 40, 0, 0, 0, 0, 127, 127, 158, 59, 253, 53, 187, 88, 102, 190, 100, 155, 226, 190, 132, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 9, 59, 114, 52, 187, 88, 102, 190, 100, 155, 226, 190, 132, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 9, 59, 114, 52, 187, 88, 102, 190, 100, 155, 226, 190, 132, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 9, 59, 114, 52, 187, 88, 102, 190, 100, 155, 226, 190, 132, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 9, 59, 114, 52, 183, 88, 102, 190, 100, 155, 226, 190, 150, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 158, 59, 114, 52, 183, 88, 102, 190, 100, 155, 226, 190, 150, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 158, 59, 114, 52, 183, 88, 102, 190, 100, 155, 226, 190, 150, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 76, 57, 114, 52, 183, 88, 102, 190, 100, 155, 226, 190, 150, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 76, 57, 114, 52, 187, 88, 102, 190, 64, 215, 94, 190, 132, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 9, 59, 146, 50, 187, 88, 102, 190, 64, 215, 94, 190, 132, 95, 230, 189, 136, 40, 0, 0, 0, 0, 126, 127, 9, 59, 146, 50, 187, 88, 102, 190, 64, 215, 94, 190, 132, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 9, 59, 146, 50, 187, 88, 102, 190, 64, 215, 94, 190, 132, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 9, 59, 146, 50, 183, 88, 102, 190, 164, 25, 14, 191, 150, 95, 230, 61, 131, 236, 0, 0, 0, 0, 127, 127, 158, 59, 6, 53, 183, 88, 102, 190, 164, 25, 14, 191, 150, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 76, 57, 6, 53, 183, 88, 102, 190, 164, 25, 14, 191, 150, 95, 230, 61, 0, 0, 127, 0, 126, 0, 0, 127, 76, 57, 6, 53, 143, 243, 63, 190, 150, 229, 42, 191, 149, 95, 230, 61, 136, 216, 0, 0, 0, 0, 127, 127, 158, 59, 154, 53, 143, 243, 63, 190, 150, 229, 42, 191, 149, 95, 230, 61, 0, 129, 0, 0, 0, 0, 127, 127, 158, 59, 154, 53, 143, 243, 63, 190, 150, 229, 42, 191, 149, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 101, 57, 154, 53, 146, 135, 153, 189, 100, 155, 226, 190, 147, 95, 230, 61, 0, 129, 0, 0, 0, 0, 127, 127, 158, 59, 137, 55, 146, 135, 153, 189, 100, 155, 226, 190, 147, 95, 230, 61, 0, 129, 0, 0, 0, 0, 126, 127, 158, 59, 137, 55, 150, 135, 153, 189, 100, 155, 226, 190, 198, 136, 66, 51, 129, 0, 0, 0, 0, 0, 129, 127, 43, 58, 253, 53, 150, 135, 153, 189, 100, 155, 226, 190, 198, 136, 66, 51, 0, 0, 127, 0, 129, 0, 0, 127, 43, 58, 253, 53, 150, 135, 153, 189, 100, 155, 226, 190, 198, 136, 66, 51, 0, 129, 0, 0, 0, 0, 127, 127, 84, 59, 137, 55, 0, 128, 218, 55, 100, 155, 226, 190, 136, 230, 17, 51, 0, 0, 127, 0, 129, 0, 0, 127, 249, 57, 253, 53, 0, 128, 218, 55, 100, 155, 226, 190, 136, 230, 17, 51, 0, 129, 0, 0, 0, 0, 127, 127, 84, 59, 236, 55, 0, 128, 218, 55, 100, 155, 226, 190, 136, 230, 17, 51, 127, 0, 0, 0, 0, 0, 129, 127, 43, 58, 114, 52, 0, 128, 218, 55, 100, 155, 226, 190, 136, 230, 17, 51, 127, 0, 0, 0, 0, 0, 129, 127, 43, 58, 114, 52, 25, 142, 25, 190, 100, 155, 226, 190, 149, 95, 230, 61, 0, 129, 0, 0, 0, 0, 126, 127, 158, 59, 38, 55, 25, 142, 25, 190, 100, 155, 226, 190, 149, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 126, 57, 114, 52, 25, 142, 25, 190, 100, 155, 226, 190, 149, 95, 230, 61, 127, 0, 0, 0, 0, 0, 127, 127, 158, 59, 38, 55, 154, 135, 153, 189, 164, 25, 14, 191, 135, 95, 230, 189, 129, 0, 0, 0, 0, 0, 129, 127, 117, 58, 105, 53, 154, 135, 153, 189, 164, 25, 14, 191, 135, 95, 230, 189, 0, 129, 0, 0, 0, 0, 129, 127, 117, 58, 105, 53, 154, 135, 153, 189, 164, 25, 14, 191, 135, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 166, 58, 6, 53, 29, 142, 25, 190, 100, 155, 226, 190, 133, 95, 230, 189, 0, 0, 129, 0, 127, 0, 0, 127, 216, 58, 114, 52, 29, 142, 25, 190, 100, 155, 226, 190, 133, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 216, 58, 114, 52, 29, 142, 25, 190, 100, 155, 226, 190, 133, 95, 230, 189, 0, 129, 0, 0, 0, 0, 127, 127, 9, 59, 38, 55, 29, 142, 25, 190, 100, 155, 226, 190, 133, 95, 230, 189, 127, 0, 0, 0, 0, 0, 127, 127, 9, 59, 38, 55, 29, 142, 25, 190, 164, 25, 14, 191, 133, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 216, 58, 6, 53, 29, 142, 25, 190, 164, 25, 14, 191, 133, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 216, 58, 6, 53, 29, 142, 25, 190, 164, 25, 14, 191, 133, 95, 230, 189, 125, 20, 0, 0, 0, 0, 127, 127, 9, 59, 146, 54, 0, 128, 218, 55, 164, 25, 14, 191, 136, 230, 17, 51, 0, 129, 0, 0, 0, 0, 130, 127, 43, 58, 6, 53, 0, 128, 218, 55, 164, 25, 14, 191, 136, 230, 17, 51, 0, 0, 127, 0, 129, 0, 0, 127, 249, 57, 105, 53, 0, 128, 218, 55, 164, 25, 14, 191, 136, 230, 17, 51, 127, 0, 0, 0, 0, 0, 129, 127, 43, 58, 6, 53, 154, 135, 153, 189, 100, 155, 226, 190, 135, 95, 230, 189, 129, 0, 0, 0, 0, 0, 129, 127, 117, 58, 253, 53, 154, 135, 153, 189, 100, 155, 226, 190, 135, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 166, 58, 114, 52, 154, 135, 153, 189, 100, 155, 226, 190, 135, 95, 230, 189, 0, 0, 129, 0, 130, 0, 0, 127, 166, 58, 114, 52, 154, 135, 153, 189, 100, 155, 226, 190, 135, 95, 230, 189, 0, 129, 0, 0, 0, 0, 126, 127, 9, 59, 137, 55, 150, 135, 153, 189, 164, 25, 14, 191, 198, 136, 66, 51, 129, 0, 0, 0, 0, 0, 129, 127, 43, 58, 105, 53, 150, 135, 153, 189, 164, 25, 14, 191, 198, 136, 66, 51, 0, 129, 0, 0, 0, 0, 130, 127, 43, 58, 105, 53, 150, 135, 153, 189, 164, 25, 14, 191, 198, 136, 66, 51, 0, 0, 127, 0, 129, 0, 0, 127, 43, 58, 105, 53 ),
+"array_index_data": PackedByteArray( 58, 0, 26, 0, 40, 0, 58, 0, 23, 0, 26, 0, 49, 0, 39, 0, 53, 0, 49, 0, 57, 0, 39, 0, 35, 0, 22, 0, 3, 0, 35, 0, 31, 0, 22, 0, 69, 0, 79, 0, 92, 0, 69, 0, 96, 0, 79, 0, 54, 0, 11, 0, 50, 0, 54, 0, 61, 0, 11, 0, 88, 0, 48, 0, 38, 0, 88, 0, 16, 0, 48, 0, 59, 0, 4, 0, 0, 0, 93, 0, 51, 0, 82, 0, 59, 0, 93, 0, 4, 0, 93, 0, 59, 0, 51, 0, 2, 0, 45, 0, 34, 0, 74, 0, 2, 0, 6, 0, 45, 0, 2, 0, 74, 0, 37, 0, 66, 0, 63, 0, 37, 0, 47, 0, 66, 0, 61, 0, 17, 0, 11, 0, 61, 0, 64, 0, 17, 0, 32, 0, 28, 0, 30, 0, 32, 0, 41, 0, 28, 0, 21, 0, 27, 0, 25, 0, 21, 0, 29, 0, 27, 0, 95, 0, 76, 0, 67, 0, 95, 0, 84, 0, 76, 0, 72, 0, 98, 0, 70, 0, 72, 0, 90, 0, 98, 0, 43, 0, 42, 0, 33, 0, 43, 0, 56, 0, 42, 0, 77, 0, 62, 0, 55, 0, 77, 0, 36, 0, 62, 0, 14, 0, 12, 0, 18, 0, 14, 0, 86, 0, 12, 0, 94, 0, 9, 0, 5, 0, 94, 0, 81, 0, 9, 0, 44, 0, 71, 0, 68, 0, 44, 0, 73, 0, 71, 0, 85, 0, 38, 0, 78, 0, 85, 0, 88, 0, 38, 0, 52, 0, 87, 0, 83, 0, 52, 0, 13, 0, 87, 0, 15, 0, 65, 0, 46, 0, 15, 0, 19, 0, 65, 0, 89, 0, 80, 0, 97, 0, 89, 0, 8, 0, 80, 0, 7, 0, 91, 0, 75, 0, 7, 0, 10, 0, 91, 0, 1, 0, 24, 0, 60, 0, 1, 0, 20, 0, 24, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 159,
+"material": ExtResource( 1 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 99
+}
+
+[sub_resource type="ArrayMesh" id=16]
+surfaces/0 = {
+"aabb": AABB( -0.119974, -0.675, -0.224974, 0.224984, 0.674922, 0.337461 ),
+"array_data": PackedByteArray( 59, 10, 215, 61, 246, 209, 172, 190, 141, 95, 230, 189, 0, 0, 130, 0, 130, 0, 0, 127, 193, 58, 123, 58, 59, 10, 215, 61, 246, 209, 172, 190, 141, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 193, 58, 123, 58, 59, 10, 215, 61, 246, 209, 172, 190, 141, 95, 230, 189, 126, 0, 0, 0, 127, 0, 0, 127, 193, 58, 123, 58, 59, 10, 215, 61, 229, 154, 1, 191, 141, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 193, 58, 228, 58, 59, 10, 215, 61, 229, 154, 1, 191, 141, 95, 230, 189, 0, 113, 200, 0, 0, 56, 113, 127, 148, 59, 78, 59, 59, 10, 215, 61, 229, 154, 1, 191, 141, 95, 230, 189, 126, 0, 0, 0, 0, 0, 129, 127, 193, 58, 228, 58, 59, 10, 215, 61, 229, 154, 1, 191, 141, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 193, 58, 228, 58, 223, 180, 245, 189, 229, 154, 1, 191, 136, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 78, 59, 228, 58, 223, 180, 245, 189, 229, 154, 1, 191, 136, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 78, 59, 228, 58, 223, 180, 245, 189, 229, 154, 1, 191, 136, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 78, 59, 228, 58, 223, 180, 245, 189, 229, 154, 1, 191, 136, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 78, 59, 228, 58, 223, 180, 245, 189, 229, 154, 1, 191, 136, 95, 230, 189, 0, 113, 200, 0, 0, 56, 113, 127, 148, 59, 219, 59, 59, 10, 215, 61, 0, 192, 164, 184, 141, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 193, 58, 167, 57, 59, 10, 215, 61, 0, 192, 164, 184, 141, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 193, 58, 167, 57, 59, 10, 215, 61, 0, 192, 164, 184, 141, 95, 230, 189, 126, 0, 0, 0, 0, 0, 129, 127, 193, 58, 167, 57, 63, 10, 215, 61, 246, 209, 172, 190, 141, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 52, 58, 123, 58, 63, 10, 215, 61, 246, 209, 172, 190, 141, 95, 230, 61, 0, 0, 126, 0, 127, 0, 0, 127, 52, 58, 123, 58, 63, 10, 215, 61, 246, 209, 172, 190, 141, 95, 230, 61, 126, 0, 0, 0, 0, 0, 129, 127, 52, 58, 123, 58, 219, 180, 245, 189, 229, 154, 1, 191, 146, 95, 230, 61, 129, 0, 0, 0, 0, 0, 126, 127, 218, 59, 228, 58, 219, 180, 245, 189, 229, 154, 1, 191, 146, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 218, 59, 228, 58, 219, 180, 245, 189, 229, 154, 1, 191, 146, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 167, 57, 228, 58, 219, 180, 245, 189, 229, 154, 1, 191, 146, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 167, 57, 228, 58, 63, 10, 215, 61, 229, 154, 1, 191, 141, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 52, 58, 228, 58, 63, 10, 215, 61, 229, 154, 1, 191, 141, 95, 230, 61, 0, 0, 127, 0, 126, 0, 0, 127, 52, 58, 228, 58, 63, 10, 215, 61, 229, 154, 1, 191, 141, 95, 230, 61, 126, 0, 0, 0, 0, 0, 130, 127, 52, 58, 228, 58, 223, 180, 245, 189, 246, 209, 172, 190, 136, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 78, 59, 123, 58, 223, 180, 245, 189, 246, 209, 172, 190, 136, 95, 230, 189, 130, 0, 0, 0, 0, 0, 126, 127, 78, 59, 123, 58, 223, 180, 245, 189, 246, 209, 172, 190, 136, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 78, 59, 123, 58, 223, 180, 245, 189, 246, 209, 172, 190, 136, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 78, 59, 123, 58, 219, 180, 245, 189, 246, 209, 172, 190, 146, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 218, 59, 123, 58, 219, 180, 245, 189, 246, 209, 172, 190, 146, 95, 230, 61, 130, 0, 0, 0, 0, 0, 127, 127, 218, 59, 123, 58, 219, 180, 245, 189, 246, 209, 172, 190, 146, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 167, 57, 123, 58, 219, 180, 245, 189, 246, 209, 172, 190, 146, 95, 230, 61, 0, 0, 126, 0, 126, 0, 0, 127, 167, 57, 123, 58, 219, 180, 245, 189, 0, 192, 164, 184, 146, 95, 230, 61, 130, 0, 0, 0, 0, 0, 126, 127, 218, 59, 167, 57, 219, 180, 245, 189, 0, 192, 164, 184, 146, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 78, 59, 26, 57, 219, 180, 245, 189, 0, 192, 164, 184, 146, 95, 230, 61, 0, 0, 126, 0, 127, 0, 0, 127, 167, 57, 167, 57, 223, 180, 245, 189, 0, 192, 164, 184, 136, 95, 230, 189, 130, 0, 0, 0, 0, 0, 127, 127, 78, 59, 167, 57, 223, 180, 245, 189, 0, 192, 164, 184, 136, 95, 230, 189, 0, 0, 130, 0, 130, 0, 0, 127, 78, 59, 167, 57, 223, 180, 245, 189, 0, 192, 164, 184, 136, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 78, 59, 167, 57, 223, 180, 245, 189, 208, 204, 44, 191, 136, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 78, 59, 78, 59, 223, 180, 245, 189, 208, 204, 44, 191, 136, 95, 230, 189, 129, 0, 0, 0, 0, 0, 126, 127, 78, 59, 78, 59, 223, 180, 245, 189, 208, 204, 44, 191, 136, 95, 230, 189, 0, 129, 0, 0, 0, 0, 129, 127, 193, 58, 219, 59, 223, 180, 245, 189, 208, 204, 44, 191, 136, 95, 230, 189, 0, 129, 0, 0, 0, 0, 129, 127, 193, 58, 219, 59, 219, 180, 245, 189, 208, 204, 44, 191, 146, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 218, 59, 78, 59, 219, 180, 245, 189, 208, 204, 44, 191, 146, 95, 230, 61, 0, 129, 0, 0, 0, 0, 129, 127, 52, 58, 219, 59, 219, 180, 245, 189, 208, 204, 44, 191, 146, 95, 230, 61, 0, 0, 127, 0, 126, 0, 0, 127, 167, 57, 78, 59, 63, 10, 215, 61, 0, 192, 164, 184, 141, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 193, 58, 26, 57, 63, 10, 215, 61, 0, 192, 164, 184, 141, 95, 230, 61, 0, 0, 126, 0, 126, 0, 0, 127, 52, 58, 167, 57, 63, 10, 215, 61, 0, 192, 164, 184, 141, 95, 230, 61, 126, 0, 0, 0, 0, 0, 129, 127, 52, 58, 167, 57, 56, 10, 215, 61, 222, 0, 16, 191, 141, 95, 102, 190, 0, 0, 129, 0, 0, 127, 0, 127, 78, 59, 78, 59, 56, 10, 215, 61, 222, 0, 16, 191, 141, 95, 102, 190, 0, 113, 200, 0, 0, 56, 113, 127, 78, 59, 78, 59, 56, 10, 215, 61, 222, 0, 16, 191, 141, 95, 102, 190, 127, 0, 0, 0, 0, 0, 129, 127, 7, 59, 7, 59, 63, 10, 215, 61, 208, 204, 44, 191, 141, 95, 230, 61, 0, 129, 0, 0, 0, 0, 129, 127, 52, 58, 78, 59, 63, 10, 215, 61, 208, 204, 44, 191, 141, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 52, 58, 78, 59, 63, 10, 215, 61, 208, 204, 44, 191, 141, 95, 230, 61, 126, 0, 0, 0, 0, 0, 129, 127, 52, 58, 78, 59, 59, 10, 215, 61, 208, 204, 44, 191, 141, 95, 230, 189, 0, 129, 0, 0, 0, 0, 129, 127, 193, 58, 78, 59, 59, 10, 215, 61, 208, 204, 44, 191, 141, 95, 230, 189, 0, 129, 0, 0, 0, 0, 129, 127, 193, 58, 78, 59, 59, 10, 215, 61, 208, 204, 44, 191, 141, 95, 230, 189, 126, 0, 0, 0, 0, 0, 130, 127, 193, 58, 78, 59, 59, 10, 215, 61, 208, 204, 44, 191, 141, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 193, 58, 78, 59, 225, 180, 245, 189, 208, 204, 44, 191, 139, 95, 102, 190, 129, 0, 0, 0, 0, 0, 127, 127, 7, 59, 78, 59, 225, 180, 245, 189, 208, 204, 44, 191, 139, 95, 102, 190, 0, 0, 129, 0, 0, 127, 0, 127, 7, 59, 219, 59, 225, 180, 245, 189, 208, 204, 44, 191, 139, 95, 102, 190, 0, 129, 0, 0, 0, 0, 129, 127, 7, 59, 219, 59, 56, 10, 215, 61, 208, 204, 44, 191, 141, 95, 102, 190, 0, 0, 129, 0, 0, 127, 0, 127, 7, 59, 78, 59, 56, 10, 215, 61, 208, 204, 44, 191, 141, 95, 102, 190, 0, 129, 0, 0, 0, 0, 129, 127, 7, 59, 78, 59, 56, 10, 215, 61, 208, 204, 44, 191, 141, 95, 102, 190, 127, 0, 0, 0, 0, 0, 130, 127, 7, 59, 78, 59, 225, 180, 245, 189, 222, 0, 16, 191, 139, 95, 102, 190, 129, 0, 0, 0, 0, 0, 127, 127, 7, 59, 7, 59, 225, 180, 245, 189, 222, 0, 16, 191, 139, 95, 102, 190, 0, 0, 129, 0, 0, 127, 0, 127, 78, 59, 219, 59, 225, 180, 245, 189, 222, 0, 16, 191, 139, 95, 102, 190, 0, 113, 200, 0, 0, 56, 113, 127, 78, 59, 219, 59 ),
+"array_index_data": PackedByteArray( 26, 0, 33, 0, 30, 0, 26, 0, 36, 0, 33, 0, 9, 0, 29, 0, 19, 0, 9, 0, 25, 0, 29, 0, 0, 0, 37, 0, 27, 0, 0, 0, 12, 0, 37, 0, 61, 0, 56, 0, 63, 0, 61, 0, 42, 0, 56, 0, 3, 0, 28, 0, 10, 0, 3, 0, 1, 0, 28, 0, 47, 0, 32, 0, 35, 0, 47, 0, 16, 0, 32, 0, 40, 0, 18, 0, 43, 0, 40, 0, 8, 0, 18, 0, 41, 0, 52, 0, 55, 0, 41, 0, 44, 0, 52, 0, 5, 0, 14, 0, 2, 0, 14, 0, 17, 0, 48, 0, 24, 0, 57, 0, 54, 0, 14, 0, 24, 0, 17, 0, 24, 0, 5, 0, 57, 0, 14, 0, 5, 0, 24, 0, 11, 0, 50, 0, 4, 0, 11, 0, 67, 0, 50, 0, 65, 0, 39, 0, 59, 0, 65, 0, 7, 0, 39, 0, 45, 0, 23, 0, 53, 0, 45, 0, 21, 0, 23, 0, 62, 0, 66, 0, 60, 0, 62, 0, 49, 0, 66, 0, 13, 0, 34, 0, 38, 0, 13, 0, 46, 0, 34, 0, 20, 0, 15, 0, 22, 0, 20, 0, 31, 0, 15, 0, 6, 0, 64, 0, 58, 0, 6, 0, 51, 0, 64, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 108,
+"material": ExtResource( 1 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 68
+}
+
+[sub_resource type="ArrayMesh" id=17]
+surfaces/0 = {
+"aabb": AABB( -0.105, -0.675, -0.224974, 0.224984, 0.674922, 0.337461 ),
+"array_data": PackedByteArray( 219, 180, 245, 61, 246, 209, 172, 190, 146, 95, 230, 189, 0, 0, 130, 0, 130, 0, 0, 127, 180, 53, 137, 58, 219, 180, 245, 61, 246, 209, 172, 190, 146, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 180, 53, 137, 58, 219, 180, 245, 61, 246, 209, 172, 190, 146, 95, 230, 189, 126, 0, 0, 0, 0, 0, 129, 127, 180, 53, 137, 58, 219, 180, 245, 61, 246, 209, 172, 190, 146, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 180, 53, 137, 58, 219, 180, 245, 61, 229, 154, 1, 191, 146, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 180, 53, 243, 58, 219, 180, 245, 61, 229, 154, 1, 191, 146, 95, 230, 189, 0, 113, 200, 0, 0, 200, 143, 127, 39, 53, 234, 59, 219, 180, 245, 61, 229, 154, 1, 191, 146, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 180, 53, 243, 58, 219, 180, 245, 61, 229, 154, 1, 191, 146, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 180, 53, 243, 58, 63, 10, 215, 189, 229, 154, 1, 191, 141, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 206, 54, 243, 58, 63, 10, 215, 189, 229, 154, 1, 191, 141, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 206, 54, 243, 58, 63, 10, 215, 189, 229, 154, 1, 191, 141, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 206, 54, 243, 58, 63, 10, 215, 189, 229, 154, 1, 191, 141, 95, 230, 189, 0, 113, 200, 0, 0, 200, 143, 127, 39, 53, 93, 59, 219, 180, 245, 61, 0, 192, 164, 184, 146, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 180, 53, 182, 57, 219, 180, 245, 61, 0, 192, 164, 184, 146, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 180, 53, 182, 57, 219, 180, 245, 61, 0, 192, 164, 184, 146, 95, 230, 189, 126, 0, 0, 0, 0, 0, 130, 127, 180, 53, 182, 57, 223, 180, 245, 61, 246, 209, 172, 190, 136, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 129, 56, 137, 58, 223, 180, 245, 61, 246, 209, 172, 190, 136, 95, 230, 61, 0, 0, 126, 0, 127, 0, 0, 127, 129, 56, 137, 58, 223, 180, 245, 61, 246, 209, 172, 190, 136, 95, 230, 61, 126, 0, 0, 0, 0, 0, 130, 127, 154, 52, 137, 58, 223, 180, 245, 61, 246, 209, 172, 190, 136, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 154, 52, 137, 58, 59, 10, 215, 189, 229, 154, 1, 191, 141, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 232, 55, 243, 58, 59, 10, 215, 189, 229, 154, 1, 191, 141, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 232, 55, 243, 58, 59, 10, 215, 189, 229, 154, 1, 191, 141, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 232, 55, 243, 58, 223, 180, 245, 61, 229, 154, 1, 191, 136, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 129, 56, 243, 58, 223, 180, 245, 61, 229, 154, 1, 191, 136, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 129, 56, 243, 58, 223, 180, 245, 61, 229, 154, 1, 191, 136, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 154, 52, 243, 58, 63, 10, 215, 189, 246, 209, 172, 190, 141, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 206, 54, 137, 58, 63, 10, 215, 189, 246, 209, 172, 190, 141, 95, 230, 189, 130, 0, 0, 0, 0, 0, 126, 127, 206, 54, 137, 58, 63, 10, 215, 189, 246, 209, 172, 190, 141, 95, 230, 189, 0, 0, 130, 0, 129, 0, 0, 127, 206, 54, 137, 58, 63, 10, 215, 189, 246, 209, 172, 190, 141, 95, 230, 189, 0, 0, 129, 0, 129, 0, 0, 127, 206, 54, 137, 58, 59, 10, 215, 189, 246, 209, 172, 190, 141, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 232, 55, 137, 58, 59, 10, 215, 189, 246, 209, 172, 190, 141, 95, 230, 61, 130, 0, 0, 0, 0, 0, 127, 127, 232, 55, 137, 58, 59, 10, 215, 189, 246, 209, 172, 190, 141, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 232, 55, 137, 58, 59, 10, 215, 189, 246, 209, 172, 190, 141, 95, 230, 61, 0, 0, 126, 0, 126, 0, 0, 127, 232, 55, 137, 58, 59, 10, 215, 189, 0, 192, 164, 184, 141, 95, 230, 61, 130, 0, 0, 0, 0, 0, 126, 127, 232, 55, 182, 57, 59, 10, 215, 189, 0, 192, 164, 184, 141, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 206, 54, 41, 57, 59, 10, 215, 189, 0, 192, 164, 184, 141, 95, 230, 61, 0, 0, 126, 0, 127, 0, 0, 127, 232, 55, 182, 57, 63, 10, 215, 189, 0, 192, 164, 184, 141, 95, 230, 189, 130, 0, 0, 0, 0, 0, 127, 127, 206, 54, 182, 57, 63, 10, 215, 189, 0, 192, 164, 184, 141, 95, 230, 189, 0, 0, 130, 0, 130, 0, 0, 127, 206, 54, 182, 57, 63, 10, 215, 189, 0, 192, 164, 184, 141, 95, 230, 189, 0, 127, 0, 0, 129, 0, 0, 127, 206, 54, 182, 57, 63, 10, 215, 189, 207, 204, 44, 191, 141, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 206, 54, 93, 59, 63, 10, 215, 189, 207, 204, 44, 191, 141, 95, 230, 189, 129, 0, 0, 0, 0, 0, 127, 127, 206, 54, 93, 59, 63, 10, 215, 189, 207, 204, 44, 191, 141, 95, 230, 189, 0, 129, 0, 0, 0, 0, 127, 127, 206, 54, 93, 59, 63, 10, 215, 189, 207, 204, 44, 191, 141, 95, 230, 189, 0, 129, 0, 0, 0, 0, 127, 127, 206, 54, 93, 59, 59, 10, 215, 189, 207, 204, 44, 191, 141, 95, 230, 61, 129, 0, 0, 0, 0, 0, 127, 127, 232, 55, 93, 59, 59, 10, 215, 189, 207, 204, 44, 191, 141, 95, 230, 61, 0, 129, 0, 0, 0, 0, 127, 127, 232, 55, 93, 59, 59, 10, 215, 189, 207, 204, 44, 191, 141, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 232, 55, 93, 59, 223, 180, 245, 61, 0, 192, 164, 184, 136, 95, 230, 61, 0, 127, 0, 0, 129, 0, 0, 127, 180, 53, 41, 57, 223, 180, 245, 61, 0, 192, 164, 184, 136, 95, 230, 61, 0, 0, 126, 0, 126, 0, 0, 127, 129, 56, 182, 57, 223, 180, 245, 61, 0, 192, 164, 184, 136, 95, 230, 61, 126, 0, 0, 0, 0, 0, 129, 127, 154, 52, 182, 57, 217, 180, 245, 61, 222, 0, 16, 191, 143, 95, 102, 190, 0, 0, 129, 0, 0, 129, 0, 127, 180, 53, 234, 59, 217, 180, 245, 61, 222, 0, 16, 191, 143, 95, 102, 190, 0, 113, 200, 0, 0, 200, 143, 127, 180, 53, 234, 59, 217, 180, 245, 61, 222, 0, 16, 191, 143, 95, 102, 190, 127, 0, 0, 0, 0, 0, 129, 127, 65, 54, 22, 59, 223, 180, 245, 61, 207, 204, 44, 191, 136, 95, 230, 61, 0, 129, 0, 0, 0, 0, 127, 127, 232, 55, 234, 59, 223, 180, 245, 61, 207, 204, 44, 191, 136, 95, 230, 61, 0, 0, 127, 0, 127, 0, 0, 127, 129, 56, 93, 59, 223, 180, 245, 61, 207, 204, 44, 191, 136, 95, 230, 61, 127, 0, 0, 0, 0, 0, 129, 127, 154, 52, 93, 59, 219, 180, 245, 61, 207, 204, 44, 191, 146, 95, 230, 189, 0, 129, 0, 0, 0, 0, 127, 127, 206, 54, 234, 59, 219, 180, 245, 61, 207, 204, 44, 191, 146, 95, 230, 189, 0, 129, 0, 0, 0, 0, 127, 127, 206, 54, 234, 59, 219, 180, 245, 61, 207, 204, 44, 191, 146, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 180, 53, 93, 59, 219, 180, 245, 61, 207, 204, 44, 191, 146, 95, 230, 189, 127, 0, 0, 0, 0, 0, 129, 127, 180, 53, 93, 59, 66, 10, 215, 189, 207, 204, 44, 191, 141, 95, 102, 190, 129, 0, 0, 0, 0, 0, 127, 127, 65, 54, 93, 59, 66, 10, 215, 189, 207, 204, 44, 191, 141, 95, 102, 190, 0, 0, 129, 0, 0, 129, 0, 127, 65, 54, 93, 59, 66, 10, 215, 189, 207, 204, 44, 191, 141, 95, 102, 190, 0, 129, 0, 0, 0, 0, 127, 127, 65, 54, 93, 59, 217, 180, 245, 61, 207, 204, 44, 191, 143, 95, 102, 190, 0, 0, 129, 0, 0, 130, 0, 127, 65, 54, 234, 59, 217, 180, 245, 61, 207, 204, 44, 191, 143, 95, 102, 190, 0, 129, 0, 0, 0, 0, 127, 127, 65, 54, 234, 59, 217, 180, 245, 61, 207, 204, 44, 191, 143, 95, 102, 190, 127, 0, 0, 0, 0, 0, 129, 127, 65, 54, 93, 59, 66, 10, 215, 189, 222, 0, 16, 191, 141, 95, 102, 190, 129, 0, 0, 0, 0, 0, 127, 127, 65, 54, 22, 59, 66, 10, 215, 189, 222, 0, 16, 191, 141, 95, 102, 190, 0, 0, 129, 0, 0, 130, 0, 127, 180, 53, 93, 59, 66, 10, 215, 189, 222, 0, 16, 191, 141, 95, 102, 190, 0, 113, 200, 0, 0, 200, 143, 127, 180, 53, 93, 59 ),
+"array_index_data": PackedByteArray( 34, 0, 13, 0, 46, 0, 34, 0, 38, 0, 13, 0, 14, 0, 17, 0, 48, 0, 14, 0, 2, 0, 17, 0, 32, 0, 47, 0, 16, 0, 32, 0, 35, 0, 47, 0, 45, 0, 23, 0, 53, 0, 45, 0, 21, 0, 23, 0, 33, 0, 26, 0, 36, 0, 33, 0, 30, 0, 26, 0, 4, 0, 28, 0, 10, 0, 4, 0, 1, 0, 28, 0, 61, 0, 56, 0, 63, 0, 61, 0, 42, 0, 56, 0, 39, 0, 19, 0, 43, 0, 39, 0, 8, 0, 19, 0, 50, 0, 11, 0, 67, 0, 50, 0, 5, 0, 11, 0, 51, 0, 58, 0, 7, 0, 51, 0, 64, 0, 58, 0, 8, 0, 29, 0, 19, 0, 8, 0, 25, 0, 29, 0, 54, 0, 6, 0, 57, 0, 54, 0, 24, 0, 6, 0, 41, 0, 52, 0, 55, 0, 41, 0, 44, 0, 52, 0, 65, 0, 40, 0, 59, 0, 65, 0, 9, 0, 40, 0, 37, 0, 0, 0, 12, 0, 37, 0, 27, 0, 0, 0, 24, 0, 3, 0, 6, 0, 24, 0, 18, 0, 3, 0, 66, 0, 62, 0, 49, 0, 66, 0, 60, 0, 62, 0, 20, 0, 15, 0, 22, 0, 20, 0, 31, 0, 15, 0 ),
+"blend_shape_data": [  ],
+"format": 97559,
+"index_count": 108,
+"material": ExtResource( 1 ),
+"primitive": 4,
+"skeleton_aabb": [  ],
+"vertex_count": 68
+}
+
+[node name="HumanoidBase" type="Node3D"]
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true
+}
+
+[node name="Animate" type="AnimationPlayer" parent="."]
+autoplay = "Still"
+anims/Die = SubResource( 1 )
+anims/RotAway = SubResource( 2 )
+anims/Still = SubResource( 3 )
+anims/idle = SubResource( 4 )
+anims/jumping = SubResource( 5 )
+anims/using = SubResource( 6 )
+anims/walking = SubResource( 7 )
+anims/walking_holding = SubResource( 8 )
+anims/walking_holding_wielding = SubResource( 9 )
+anims/walking_wielding = SubResource( 10 )
+anims/winding_up = SubResource( 11 )
+
+[node name="Head" type="MeshInstance3D" parent="."]
+transform = Transform3D( 0.999999, 0, 0, 0, 1, 0, 0, 0, 0.999999, 0, 1.595, 0 )
+mesh = SubResource( 12 )
+material/0 = null
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Look" type="RayCast3D" parent="Head"]
+transform = Transform3D( 1, 0, 0, 0, 0.984807, 0.173648, 0, -0.173648, 0.984809, -0.000465803, 0.457945, 0.373446 )
+enabled = true
+target_position = Vector3( 0, 0, -3 )
+
+[node name="Torso" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03, 0 )
+mesh = SubResource( 13 )
+material/0 = null
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Attack" type="RayCast3D" parent="Torso"]
+enabled = true
+target_position = Vector3( 0, 0, -1 )
+collision_mask = 14
+
+[node name="ArmRight" type="MeshInstance3D" parent="."]
+transform = Transform3D( 0.999999, 0, 0, 0, 0.999999, 0, 0, 0, 0.999999, 0.225, 1.26, 0 )
+mesh = SubResource( 14 )
+material/0 = null
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HandRight" type="Node3D" parent="ArmRight"]
+transform = Transform3D( 1, 0, 0, 0, -4.37113e-08, 0.999999, 0, -0.999999, -4.37113e-08, 0.105679, -0.525619, 0.00352657 )
+
+[node name="ArmLeft" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 0.999998, 0, 0, 0, 0.999999, -0.225, 1.26, 0 )
+mesh = SubResource( 15 )
+material/0 = null
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HandLeft" type="Node3D" parent="ArmLeft"]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, 0.999999, 0, -0.999999, -4.37114e-08, -0.111737, -0.536395, -0.00545293 )
+
+[node name="LegLeft" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.675, 0 )
+mesh = SubResource( 16 )
+material/0 = null
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LegRight" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.105, 0.675, 0 )
+mesh = SubResource( 17 )
+material/0 = null
+__meta__ = {
+"_edit_group_": true
+}

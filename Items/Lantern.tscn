@@ -1,0 +1,205 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://Items/PhysicalItem.gd" type="Script" id=1]
+[ext_resource path="res://Materials/glass.material" type="Material" id=2]
+[ext_resource path="res://Materials/greyDark.material" type="Material" id=3]
+[ext_resource path="res://Materials/wood.material" type="Material" id=4]
+[ext_resource path="res://Materials/brownDarkest.material" type="Material" id=5]
+[ext_resource path="res://Materials/glass_yellow.material" type="Material" id=6]
+
+[sub_resource type="CylinderShape3D" id=1]
+radius = 0.169214
+height = 0.598101
+
+[sub_resource type="CylinderMesh" id=9]
+material = ExtResource( 6 )
+top_radius = 0.075
+bottom_radius = 0.1
+height = 0.153
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id=10]
+material = ExtResource( 6 )
+top_radius = 0.1
+bottom_radius = 0.075
+height = 0.153
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id=2]
+material = ExtResource( 2 )
+top_radius = 0.075
+bottom_radius = 0.1
+height = 0.153
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id=3]
+material = ExtResource( 2 )
+top_radius = 0.1
+bottom_radius = 0.075
+height = 0.153
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id=4]
+material = ExtResource( 5 )
+top_radius = 0.15
+bottom_radius = 0.14
+height = 0.05
+radial_segments = 8
+rings = 1
+
+[sub_resource type="CylinderMesh" id=5]
+material = ExtResource( 4 )
+top_radius = 0.016
+bottom_radius = 0.025
+height = 0.074
+radial_segments = 12
+rings = 1
+
+[sub_resource type="BoxMesh" id=6]
+material = ExtResource( 3 )
+size = Vector3( 0.025, 0.025, 0.1 )
+
+[sub_resource type="BoxMesh" id=7]
+material = ExtResource( 3 )
+size = Vector3( 0.025, 0.025, 0.308 )
+
+[sub_resource type="Animation" id=8]
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:light_energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.7, 0.9, 2.5, 4, 4.1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 1.0, 2.0, 1.0, 2.0, 1.0, 2.0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 1, 1.2, 1.5, 2, 3, 4, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( -0.00556315, -0.095892, -0.00800873 ), Vector3( 0.0193502, -0.095892, 0.0306166 ), Vector3( 0.0224748, -0.136233, 0.0180075 ), Vector3( 0.0271617, -0.095892, -0.000906156 ), Vector3( -0.00440663, -0.095892, 0.0329488 ), Vector3( -0.00756213, -0.0688327, -0.0327483 ), Vector3( -0.0406923, -0.095892, 0.0131513 ), Vector3( -0.0359472, -0.095892, -0.0173039 ), Vector3( -0.00556315, -0.095892, -0.00800873 ) ]
+}
+
+[node name="Lantern" type="RigidBody3D"]
+transform = Transform3D( 0.542031, 0, 0.840359, 0, 1, 0, -0.840359, 0, 0.542031, 0, 0.0997878, 0 )
+sleeping = true
+linear_damp = 2.0
+angular_damp = 3.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69411e-11, 0, 0.000616312 )
+shape = SubResource( 1 )
+
+[node name="GlassTopLit" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69411e-11, -0.019647, 0.000616312 )
+mesh = SubResource( 9 )
+material/0 = null
+
+[node name="GlassBottomLit" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69411e-11, -0.172233, 0.000616312 )
+mesh = SubResource( 10 )
+material/0 = null
+
+[node name="GlassTopDark" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69411e-11, -0.019647, 0.000616312 )
+visible = false
+mesh = SubResource( 2 )
+material/0 = null
+
+[node name="GlassBottomDark" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69411e-11, -0.172233, 0.000616312 )
+visible = false
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="Top" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.69411e-11, 0.081599, 0.000616312 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Bottom" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, -2.69411e-11, -0.273429, 0.000616312 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="GrabHandle" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, -2.69412e-11, 0.271901, -0.0360953 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="GrabHandle2" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -2.694e-11, 0.271901, 0.0377663 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="Handle1" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -0.203009, 0.979177, 0, -0.979177, -0.203009, -2.69416e-11, 0.148661, -0.10018 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Handle2" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 0.561881, 0.827218, 0, -0.827218, 0.561881, -2.69411e-11, 0.230953, -0.083407 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Handle3" type="MeshInstance3D" parent="."]
+transform = Transform3D( -1, 7.45058e-08, 1.86265e-08, 0, -0.203009, 0.979177, 8.9407e-08, 0.979177, 0.203009, -1.88959e-09, 0.148661, 0.100046 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Handle4" type="MeshInstance3D" parent="."]
+transform = Transform3D( -1, 7.45058e-08, -5.96046e-08, 0, 0.561881, 0.827218, 8.9407e-08, 0.827218, -0.561881, -1.88959e-09, 0.230953, 0.0832731 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Strut1" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -1.88959e-09, -0.09711, -0.113128 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="Strut2" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -1.88959e-09, -0.09711, 0.11296 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="Strut3" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0.111846, -0.09711, 0.00191331 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="Strut4" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, -0.112645, -0.09711, 0.00191331 )
+mesh = SubResource( 7 )
+material/0 = null
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00556315, -0.095892, -0.00800873 )
+light_color = Color( 1, 0.945098, 0.505882, 1 )
+shadow_enabled = true
+omni_attenuation = 7.46424
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="OmniLight3D"]
+autoplay = "Flicker"
+anims/Flicker = SubResource( 8 )
+
+[node name="Grip" type="Node3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.274777, 0 )

@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://drx6ea2ng73l3"]
+
+[ext_resource type="AudioStream" uid="uid://ddxk2s12gmd00" path="res://Data/Data/Audio/Ambient-Forest-Night.ogg" id="1_o3db0"]
+
+[sub_resource type="Sky" id="3"]
+
+[sub_resource type="Environment" id="2"]
+background_mode = 2
+sky = SubResource("3")
+ambient_light_color = Color(0.145098, 0.117647, 0.580392, 1)
+ambient_light_sky_contribution = 0.0
+ambient_light_energy = 0.5
+
+[node name="Forest_Evening" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.0347582, -0.998574, 0.0405149, -0.987092, -0.0279605, 0.157693, -0.156335, -0.0454731, -0.986657, 0, 10, 0)
+light_color = Color(0.231373, 0.270588, 0.533333, 1)
+light_energy = 0.2
+shadow_enabled = true
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource("2")
+
+[node name="AmbientSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_o3db0")
+autoplay = true

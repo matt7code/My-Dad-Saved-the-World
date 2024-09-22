@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://HDRI/satara_night_no_lamps_2k.hdr" type="Texture2D" id=1]
+[ext_resource path="res://Environments/AmbientSound.gd" type="Script" id=2]
+[ext_resource path="res://Audio/Ambient-Forest-Night.ogg" type="AudioStream" id=3]
+
+[sub_resource type="Sky" id=1]
+panorama = ExtResource( 1 )
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_sky_orientation = Basis( 0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107 )
+background_energy = 0.02
+ambient_light_color = Color( 0.188235, 0.188235, 0.188235, 1 )
+ambient_light_energy = 0.5
+ambient_light_sky_contribution = 0.0
+fog_color = Color( 0, 0.333333, 0.466667, 1 )
+fog_depth_begin = 30.1
+fog_depth_end = 168.8
+
+[node name="Forest_Night" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D( -0.632581, 0.482916, -0.605503, -0.00620803, 0.778617, 0.627468, 0.77447, 0.400683, -0.48954, 3.03596, 28.1, 0 )
+light_color = Color( 0, 0.313726, 0.443137, 1 )
+light_energy = 0.2
+shadow_enabled = true
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="AmbientSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+autoplay = true
+script = ExtResource( 2 )

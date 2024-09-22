@@ -1,0 +1,276 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://Images/crosshair.png" type="Texture2D" id=1]
+[ext_resource path="res://Levels/TestLevel/TestPlayer.gd" type="Script" id=2]
+[ext_resource path="res://icon.png" type="Texture2D" id=3]
+
+[sub_resource type="CapsuleShape3D" id=1]
+radius = 0.5
+height = 0.8
+
+[sub_resource type="SphereMesh" id=2]
+radius = 0.25
+height = 0.5
+
+[sub_resource type="StandardMaterial3D" id=3]
+albedo_texture = ExtResource( 3 )
+roughness = 0.0
+uv1_scale = Vector3( 3, 3, 0 )
+uv1_offset = Vector3( 0.5, 0, 0 )
+
+[sub_resource type="CylinderMesh" id=4]
+top_radius = 0.047
+bottom_radius = 0.095
+height = 0.1
+radial_segments = 12
+rings = 1
+
+[sub_resource type="StandardMaterial3D" id=5]
+albedo_color = Color( 0.862745, 0.74902, 0, 1 )
+
+[sub_resource type="CapsuleMesh" id=6]
+material = SubResource( 5 )
+radius = 0.35
+height = 0.8
+radial_segments = 16
+rings = 4
+
+[sub_resource type="BoxMesh" id=7]
+size = Vector3( 0.2, 0.75, 0.2 )
+
+[sub_resource type="StandardMaterial3D" id=8]
+albedo_color = Color( 0.862745, 0.74902, 0, 1 )
+
+[sub_resource type="Animation" id=9]
+length = 1.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmJointR:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.8, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 75, 0, 0 ), Vector3( 75, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ArmJointR/Arm:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, -30, 0 ), Vector3( 0, 30, 0 ), Vector3( 0, -30, 0 ), Vector3( 0, 30, 0 ), Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmJointL:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.25, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 90, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmJointR:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.25, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 90, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("ArmJointR/Arm:rotation_degrees")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0 ),
+"transitions": PackedFloat32Array( 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmJointL:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.25, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 90, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 0.5
+step = 0.05
+tracks/0/type = "value"
+tracks/0/path = NodePath("ArmJointR:rotation_degrees")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.25, 0.5 ),
+"transitions": PackedFloat32Array( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 90, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.278431, 0, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.686275, 0.627451, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.34902, 0.32549, 0, 1 )
+
+[node name="TestPlayer" type="CharacterBody3D"]
+collision_layer = 2
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.900002, 0 )
+shape = SubResource( 1 )
+
+[node name="Head" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.726, 0 )
+mesh = SubResource( 2 )
+material/0 = SubResource( 3 )
+
+[node name="LookingAt" type="RayCast3D" parent="Head"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0 )
+enabled = true
+target_position = Vector3( 0, 0, -3 )
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+transform = Transform3D( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 1.274, 3 )
+far = 500.0
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Head"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.276672, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="Body" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.75, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="ArmJointR" type="Node3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3524, 1.25043, 0 )
+
+[node name="Arm" type="MeshInstance3D" parent="ArmJointR"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0962702, -0.282099, -5.96046e-07 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="Hand" type="Node3D" parent="ArmJointR/Arm"]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.373075, 0 )
+
+[node name="ArmJointL" type="Node3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5476, 1.25043, 0 )
+
+[node name="Arm" type="MeshInstance3D" parent="ArmJointL"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0962702, -0.282099, 0 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 8 )
+
+[node name="Hand" type="Node3D" parent="ArmJointL/Arm"]
+transform = Transform3D( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, -0.373075, 0 )
+
+[node name="AnimationPlayerR" type="AnimationPlayer" parent="."]
+anims/Using = SubResource( 9 )
+anims/WaveArmL = SubResource( 10 )
+anims/WaveArmR = SubResource( 11 )
+
+[node name="AnimationPlayerL" type="AnimationPlayer" parent="."]
+anims/WaveArmL = SubResource( 12 )
+anims/WaveArmR = SubResource( 13 )
+
+[node name="Hud" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Hud"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -2.0
+offset_top = -190.0
+offset_right = 2.0
+offset_bottom = -186.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Life" type="ProgressBar" parent="Hud"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -583.0
+offset_top = -72.0
+offset_right = 583.0
+offset_bottom = -47.0
+custom_minimum_size = Vector2( 500, 25 )
+theme_override_styles/fg = SubResource( 14 )
+theme_override_styles/bg = SubResource( 15 )
+value = 34.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Stamina" type="ProgressBar" parent="Hud"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -583.0
+offset_top = -41.8993
+offset_right = 583.0
+offset_bottom = -26.8993
+custom_minimum_size = Vector2( 500, 15 )
+theme_override_styles/fg = SubResource( 16 )
+theme_override_styles/bg = SubResource( 17 )
+value = 34.0
+percent_visible = false
+__meta__ = {
+"_edit_use_anchors_": false
+}

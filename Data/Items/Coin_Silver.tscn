@@ -1,0 +1,29 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Materials/silver.tres" type="Material" id=1]
+
+[sub_resource type="CylinderMesh" id=1]
+material = ExtResource( 1 )
+top_radius = 0.031
+bottom_radius = 0.031
+height = 0.005
+radial_segments = 24
+rings = 1
+
+[sub_resource type="CylinderShape3D" id=2]
+radius = 0.03
+height = 0.01
+
+[node name="Coin_Silver" type="RigidBody3D"]
+linear_damp = 1.0
+angular_damp = 1.0
+__meta__ = {
+"_editor_description_": "	"
+}
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource( 2 )

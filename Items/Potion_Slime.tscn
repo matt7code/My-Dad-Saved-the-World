@@ -1,0 +1,95 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Items/PhysicalItem.gd" type="Script" id=1]
+[ext_resource path="res://Materials/wood.material" type="Material" id=2]
+[ext_resource path="res://Materials/glass.material" type="Material" id=3]
+
+[sub_resource type="CylinderShape3D" id=1]
+radius = 0.152055
+height = 0.527886
+
+[sub_resource type="StandardMaterial3D" id=2]
+flags_transparent = true
+vertex_color_use_as_albedo = true
+params_depth_draw_mode = 3
+albedo_color = Color( 0.219608, 1, 0, 0.501961 )
+emission_enabled = true
+emission = Color( 0, 0, 0, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="CylinderMesh" id=3]
+material = SubResource( 2 )
+top_radius = 0.1
+bottom_radius = 0.15
+height = 0.3
+radial_segments = 12
+rings = 1
+
+[sub_resource type="CylinderMesh" id=4]
+material = ExtResource( 3 )
+top_radius = 0.025
+bottom_radius = 0.1
+height = 0.09
+radial_segments = 12
+rings = 1
+
+[sub_resource type="CylinderMesh" id=5]
+material = ExtResource( 3 )
+top_radius = 0.025
+bottom_radius = 0.025
+height = 0.09
+radial_segments = 12
+rings = 1
+
+[sub_resource type="CylinderMesh" id=6]
+material = ExtResource( 2 )
+top_radius = 0.052
+bottom_radius = 0.034
+height = 0.028
+radial_segments = 12
+rings = 1
+
+[node name="Potion_Slime" type="RigidBody3D"]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.287447, 0 )
+sleeping = true
+linear_damp = 1.0
+angular_damp = 2.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00114977, -0.0866597, 0 )
+shape = SubResource( 1 )
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00114977, -0.20177, 0 )
+light_color = Color( 0.243137, 1, 0, 1 )
+light_energy = 0.5
+omni_range = 2.44939
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00114977, -0.200533, 3.72529e-09 )
+mesh = SubResource( 3 )
+material/0 = null
+
+[node name="MeshInstance2" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00114977, -0.00532904, 0 )
+mesh = SubResource( 4 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00114977, 0.0846513, 0 )
+mesh = SubResource( 5 )
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00114977, 0.143719, 0 )
+mesh = SubResource( 6 )
+material/0 = null
+
+[node name="Grip" type="Node3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0464649, 0 )

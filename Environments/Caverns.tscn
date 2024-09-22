@@ -1,0 +1,36 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Audio/caves.ogg" type="AudioStream" id=1]
+
+[sub_resource type="Sky" id=1]
+sky_top_color = Color( 0.156863, 0.113725, 0, 1 )
+sky_horizon_color = Color( 0, 0, 0, 1 )
+sky_energy = 0.0
+ground_bottom_color = Color( 0, 0, 0, 1 )
+ground_horizon_color = Color( 0.0941176, 0.0784314, 0.0666667, 1 )
+ground_energy = 0.0
+sun_color = Color( 0, 0, 0, 1 )
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+ambient_light_energy = 0.0
+ambient_light_sky_contribution = 0.0
+fog_enabled = true
+fog_color = Color( 0, 0, 0, 1 )
+fog_sun_color = Color( 0, 0, 0, 1 )
+
+[node name="Caverns" type="Node3D"]
+
+[node name="AmbientLevelSounds" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+autoplay = true
+
+[node name="Environment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+light_color = Color( 0, 0.0313726, 0.168627, 1 )
+light_energy = 0.1
+light_indirect_energy = 0.1

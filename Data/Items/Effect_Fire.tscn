@@ -1,0 +1,85 @@
+[gd_scene load_steps=7 format=2]
+
+[sub_resource type="StandardMaterial3D" id=1]
+flags_transparent = true
+flags_unshaded = true
+vertex_color_use_as_albedo = true
+params_billboard_mode = 3
+params_billboard_keep_scale = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id=2]
+material = SubResource( 1 )
+size = Vector2( 0.09, 0.09 )
+
+[sub_resource type="Curve" id=3]
+max_value = 10.0
+_data = [ Vector2( 0, 10 ), 0.0, -0.703258, 0, 0, Vector2( 0.541463, 1.13636 ), 1.86363, 0.0, 0, 0 ]
+
+[sub_resource type="Curve" id=4]
+_data = [ Vector2( 0, 1 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=5]
+offsets = PackedFloat32Array( 0, 0.192308, 0.527473, 1 )
+colors = PackedColorArray( 1, 0.585938, 0, 1, 1, 0.960938, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1 )
+
+[sub_resource type="Animation" id=6]
+length = 5.0
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:light_color")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PackedFloat32Array( 0, 0.8, 1.8, 2.7, 3.3, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0.694118, 0.635294, 0.164706, 1 ), Color( 0.745098, 0.498039, 0.227451, 1 ), Color( 0.756863, 0.278431, 0.172549, 1 ), Color( 0.682353, 0.517647, 0.270588, 1 ), Color( 0.905882, 0.654902, 0.454902, 1 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PackedFloat32Array( 0, 0.8, 1.8, 2.7, 3.3, 4.5, 5 ),
+"transitions": PackedFloat32Array( 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0, 0, 0 ), Vector3( 0, -0.0598478, 0.0562831 ), Vector3( -0.0569658, 0.0720218, -0.0654174 ), Vector3( 0.0897182, -0.0512066, -0.0211456 ), Vector3( -0.0321483, -0.0536442, 0.00948164 ), Vector3( 0, 0, 0 ), Vector3( 0, 0, 0 ) ]
+}
+
+[node name="Fire" type="Node3D"]
+
+[node name="Flame" type="CPUParticles3D" parent="."]
+amount = 48
+lifetime = 0.1
+speed_scale = 0.02
+lifetime_randomness = 0.1
+fract_delta = false
+local_coords = false
+mesh = SubResource( 2 )
+emission_shape = 1
+emission_sphere_radius = 0.1
+direction = Vector3( 0, 1, 0 )
+spread = 25.0
+flatness = 0.8
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 10.0
+linear_accel = 1.0
+linear_accel_random = 0.1
+linear_accel_curve = SubResource( 3 )
+scale_amount_random = 0.1
+scale_amount_curve = SubResource( 4 )
+color_ramp = SubResource( 5 )
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Flame"]
+shadow_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Flame/OmniLight3D"]
+autoplay = "TorchFlicker"
+anims/TorchFlicker = SubResource( 6 )
